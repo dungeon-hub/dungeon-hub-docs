@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="dhub"
+                 name="Dungeon Hub"
+                 start-page="api-docs.md">
+
+    <toc-element topic="api-docs.md"/>
+    <toc-element topic="Dungeon-Hub-Bot.md"/>
+    <toc-element topic="Dungeon-Hub-API.md"/>
+    <toc-element topic="Dungeon-Hub-Website.md"/>
+    <toc-element topic="API-quickstart.md"/>
+</instance-profile>
