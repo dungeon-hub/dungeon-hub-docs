@@ -4,9 +4,9 @@
 
 <instance-profile id="dhub"
                  name="Dungeon Hub"
-                 start-page="api-docs.md">
+                 start-page="Dungeon-Hub.md">
 
-    <toc-element topic="api-docs.md"/>
+    <toc-element topic="Dungeon-Hub.md"/>
     <toc-element topic="Dungeon-Hub-Bot.md"/>
     <toc-element topic="Dungeon-Hub-API.md"/>
     <toc-element topic="Dungeon-Hub-Website.md"/>
