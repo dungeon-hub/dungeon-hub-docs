@@ -62,4 +62,8 @@
         <description>Created after removal of "API Reference" from API Docs</description>
         <accepts>API-reference.html</accepts>
     </rule>
+    <rule id="25c2d86e">
+        <description>Created after removal of "API Quickstart" from Dungeon Hub</description>
+        <accepts>API-quickstart.html</accepts>
+    </rule>
 </rules>
