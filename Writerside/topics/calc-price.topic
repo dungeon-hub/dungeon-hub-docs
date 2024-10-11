@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/calc-price" id="calc-price">
+
+    <title>/calc-price</title>
+
+    <tldr>
+        <p>
+            <format style="italic">Calculate the price for some amount of carries.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            <code>:x: No</code>
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+
+            <tr>
+                <td><code>carry-type</code></td>
+                <td><a href="Carry-Type.md">Autocompleted String</a></td>
+                <td>The identifier of the carry type</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Max length: 30</li>
+                    </list>
+                </td>
+            </tr>
+
+            <tr>
+                <td><code>carry-tier</code></td>
+                <td><a href="Carry-Tier.md">Autocompleted String</a></td>
+                <td>The identifier of the carry tier</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Max length: 30</li>
+                    </list>
+                </td>
+            </tr>
+
+            <tr>
+                <td><code>carry-difficulty</code></td>
+                <td><a href="Carry-Difficulty.md">Autocompleted String</a></td>
+                <td>The identifier of the carry difficulty</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Max length: 30</li>
+                    </list>
+                </td>
+            </tr>
+
+            <tr>
+                <td><code>amount</code></td>
+                <td>Number (long)</td>
+                <td>The amount of carries you want.</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Min value: 1</li>
+                        <li>Max value: 200</li>
+                    </list>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+</topic>
