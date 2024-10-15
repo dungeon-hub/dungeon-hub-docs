@@ -12,10 +12,12 @@
             <toc-element topic="Carry-Type.md"/>
             <toc-element topic="Carry-Tier.md"/>
             <toc-element topic="Carry-Difficulty.md"/>
+            <toc-element topic="Score-Type.md"/>
         </toc-element>
         <toc-element topic="Features.md"/>
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
+            <toc-element topic="leaderboard.topic"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Dungeon-Hub-API.md"/>
