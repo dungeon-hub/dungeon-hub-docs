@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/warn add" id="warn-add">
+
+    <title>/warn add</title>
+
+    <tldr>
+        <p>
+            <format style="italic">Add a warning to the given user.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+
+            <tr>
+                <td><code>name</code></td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>:white_check_mark: Yes / :x: No</td>
+                <td>
+                    <list>
+                        <li>Max length: X</li>
+                    </list>
+                </td>
+            </tr>
+        </table>
+    </chapter>
+</topic>

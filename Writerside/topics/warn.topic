@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/warn" id="warn">
+
+    <title>/warn</title>
+
+    <tldr>
+        <p>
+            <format style="italic">Manage the warnings of a server member.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            <code>:x: No</code>
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Moderate Members</code>
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="warn-add.topic"/>: Add a warning to a user.</li>
+            <li><a href="warn-deactivate.topic"/>: Deactivate a warning by id, which causes it to not be included in punishment calculations, it will also not be displayed to regular users anymore.</li>
+            <li><a href="warn-list-all.topic"/>: List all warnings a given user ever received, even if deactivated.</li>
+            <li><a href="warn-add-evidence.topic"/>: Add an evidence to a user, in the form of a text or an image.</li>
+        </list>
+    </chapter>
+</topic>

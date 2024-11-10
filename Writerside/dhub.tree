@@ -13,6 +13,7 @@
             <toc-element topic="Carry-Tier.md"/>
             <toc-element topic="Carry-Difficulty.md"/>
             <toc-element topic="Score-Type.md"/>
+            <toc-element topic="Warning-Action.md"/>
         </toc-element>
         <toc-element topic="Features.md">
             <toc-element topic="Warnings.md"/>
@@ -20,6 +21,13 @@
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
             <toc-element topic="leaderboard.topic"/>
+            <toc-element topic="warn.topic">
+                <toc-element topic="warn-add-evidence.topic"/>
+                <toc-element topic="warn-add.topic"/>
+                <toc-element topic="warn-deactivate.topic"/>
+                <toc-element topic="warn-list-all.topic"/>
+            </toc-element>
+            <toc-element topic="warns.topic"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Dungeon-Hub-API.md"/>
