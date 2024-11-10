@@ -25,6 +25,25 @@
         </p>
     </tldr>
 
+    <chapter title="Examples" id="examples" collapsible="true">
+        <p>
+            <img alt="calc-price.png" src="calc-price.png" width="325" style="inline" border-effect="rounded"/>
+            <img alt="calc-price-bulk.png" src="calc-price-bulk.png" width="325" style="inline"
+                 border-effect="rounded"/>
+        </p>
+    </chapter>
+
+    <chapter title="Description" id="description">
+        <p>
+            The price per carry depends on the way the <a href="Carry-Difficulty.md"/> is set up. <br/>
+            If it contains a bulk price and bulk amount, and the amount of carries is greater than the bulk amount, the
+            bulk price is used.
+            Otherwise, the normal price is used. <br/>
+            The <code>Type</code> field consists of: <br/>
+            <code>{carryTier.displayName} | {carryDifficulty.displayName}</code>
+        </p>
+    </chapter>
+
     <chapter title="Arguments" id="arguments" collapsible="true">
         <table style="header-row">
             <tr>

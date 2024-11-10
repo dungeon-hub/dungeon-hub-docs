@@ -6,4 +6,11 @@
        title="/warns ✏️" id="warns">
 
     <code>Coming soon</code>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <p>
+            <img alt="warns-empty.png" src="warns-empty.png" width="325" style="inline" border-effect="rounded"/>
+            <img alt="warns-1.png" src="warns-1.png" width="325" style="inline" border-effect="rounded"/>
+        </p>
+    </chapter>
 </topic>

@@ -13,6 +13,10 @@
         </p>
     </tldr>
 
+    <chapter title="Examples" id="examples" collapsible="true">
+        <img alt="warn-add-1.png" src="warn-add-1.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
     <chapter title="Arguments" id="arguments" collapsible="true">
         <table style="header-row">
             <tr>
