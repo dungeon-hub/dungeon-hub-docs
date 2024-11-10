@@ -4,7 +4,7 @@ Warnings are an easy way to log wrongful behavior of users, together with an aut
 
 ## Displaying your warnings
 To display the active warns you currently have, you can use the command [](warns.topic).
-> _Please note that you need to have the `Moderate Members` permission to be able to see warns of other users through this command._ 
+> You need to have the `Moderate Members` permission to be able to see warns of other users through this command.
 {style="note"}
 
 To display all warns, even if they [were deactivated](warn-deactivate.topic), you can use the command [](warn-list-all.topic).
