@@ -40,7 +40,9 @@
             bulk price is used.
             Otherwise, the normal price is used. <br/>
             The <code>Type</code> field consists of: <br/>
-            <code>{carryTier.displayName} | {carryDifficulty.displayName}</code>
+            <code>{carryTier.displayName} | {carryDifficulty.displayName}</code> <br/>
+            The thumbnail url is set on the <a href="Carry-Difficulty.md"/>, if there is none set there the thumbnail
+            url of the <a href="Carry-Tier.md"/> is used. If none is set there, there will be no thumbnail shown.
         </p>
     </chapter>
 
