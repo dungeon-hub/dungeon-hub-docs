@@ -25,7 +25,7 @@
         </p>
     </tldr>
 
-    <chapter title="Arguments" id="arguments">
+    <chapter title="Arguments" id="arguments" collapsible="true">
         <table style="header-row">
             <tr>
                 <td>Name</td>
