@@ -1,0 +1,3 @@
+# Warning Type ✏️
+
+`Coming soon`

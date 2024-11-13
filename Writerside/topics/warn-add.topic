@@ -29,13 +29,29 @@
             </tr>
 
             <tr>
-                <td><code>name</code></td>
-                <td>Type</td>
-                <td>Description</td>
-                <td>:white_check_mark: Yes / :x: No</td>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>The user to warn.</td>
+                <td>:x: No</td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <td><code>severity</code></td>
+                <td><a href="Warning-Type.md">Enumeration</a></td>
+                <td>The severity of the warning.</td>
+                <td>:x: No</td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <td><code>reason</code></td>
+                <td>String</td>
+                <td>The reason for the warning.</td>
+                <td>:white_check_mark: Yes</td>
                 <td>
                     <list>
-                        <li>Max length: X</li>
+                        <li>Max length: 200</li>
                     </list>
                 </td>
             </tr>
