@@ -27,22 +27,24 @@
 
     <chapter title="Examples" id="examples" collapsible="true">
         <p>
-            <img alt="calc-price.png" src="calc-price.png" width="325" style="inline" border-effect="rounded"/>
-            <img alt="calc-price-bulk.png" src="calc-price-bulk.png" width="325" style="inline"
+            <img alt="Example response of /calc-price" src="calc-price.png" width="325" style="inline"
                  border-effect="rounded"/>
+            <img alt="Example response of /calc-price with a Bulk Price" src="calc-price-bulk.png" width="325"
+                 style="inline" border-effect="rounded"/>
         </p>
     </chapter>
 
     <chapter title="Description" id="description">
-        <p>
-            The price per carry depends on the way the <a href="Carry-Difficulty.md"/> is set up. <br/>
-            If it contains a bulk price and bulk amount, and the amount of carries is greater than the bulk amount, the
-            bulk price is used.
-            Otherwise, the normal price is used. <br/>
-            The <code>Type</code> field consists of: <br/>
-            <code>{carryTier.displayName} | {carryDifficulty.displayName}</code> <br/>
-            The thumbnail url is set on the <a href="Carry-Difficulty.md"/>, if there is none set there the thumbnail
-            url of the <a href="Carry-Tier.md"/> is used. If none is set there, there will be no thumbnail shown.
+        <p>This command calculates the price for some amount of carries. The price depends on the way the <a
+                href="Carry-Difficulty.md"/> is set up, as well as the amount of carries requested.</p>
+        <p>If the carry difficulty has a bulk price and amount configured, and the amount of carries is greater than or
+            equal to the bulk amount, the bulk price is used. Otherwise, the price calculation uses the price of the
+            carry difficulty.</p>
+        <p>The <code>Type</code> field consists of: <br/>
+            <code>{carryTier.displayName} | {carryDifficulty.displayName}</code></p>
+        <p>The thumbnail url is set on the <a href="Carry-Difficulty.md"/> as well, if there is none set, the thumbnail
+            url of the <a href="Carry-Tier.md"/> is used. If none is set there as well, there will be no thumbnail
+            shown.
         </p>
     </chapter>
 
