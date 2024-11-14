@@ -3,14 +3,67 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/warns ✏️" id="warns">
+       title="/warns" id="warns">
+    <tldr>
+        <p>
+            <format style="italic">Lets you see your active warnings.</format>
+        </p>
 
-    <code>Coming soon</code>
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            <code>:x: No</code>
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
 
     <chapter title="Examples" id="examples" collapsible="true">
         <p>
             <img alt="warns-empty.png" src="warns-empty.png" width="325" style="inline" border-effect="rounded"/>
             <img alt="warns-1.png" src="warns-1.png" width="325" style="inline" border-effect="rounded"/>
+            <img alt="warns-2.png" src="warns-2.png" width="325" style="inline" border-effect="rounded"/>
         </p>
+    </chapter>
+
+    <chapter title="Description" id="description">
+        <p>
+            This command allows you to see your active warnings. It will show you the number of active warnings you
+            have, as well as all other attached information (e.g. reason, evidences, ...). <br/>
+            If you have the permission <code>Moderate Members</code>, you can also see the warnings of other users by
+            specifying a <code>target</code>.
+        </p>
+        <note>
+            <p>
+                This command does not show deactivated warnings.
+            </p>
+            <p>
+                If you want to see them, please use <a href="warn-list-all.topic"/>.
+            </p>
+        </note>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+
+            <tr>
+                <td><code>target</code></td>
+                <td>User</td>
+                <td>The user to get the warns of.</td>
+                <td>:white_check_mark: Yes</td>
+                <td> </td>
+            </tr>
+        </table>
     </chapter>
 </topic>
