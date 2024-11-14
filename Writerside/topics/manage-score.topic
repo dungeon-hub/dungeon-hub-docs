@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/manage-score" id="manage-score">
+
+    <tldr>
+        <p>
+            <format style="italic">Use this to manage the score of service team members.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            <code>:x: No</code>
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage messages</code>
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="manage-score-add.topic"/>: Give score to a service team member.</li>
+            <li><a href="manage-score-remove.topic"/>: Remove score from a service team member.</li>
+            <li><a href="manage-score-reset.topic"/>: Reset the scores for a given carry type.</li>
+        </list>
+    </chapter>
+</topic>

@@ -22,6 +22,11 @@
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
             <toc-element topic="leaderboard.topic"/>
+            <toc-element topic="manage-score.topic">
+                <toc-element topic="manage-score-add.topic"/>
+                <toc-element topic="manage-score-remove.topic"/>
+                <toc-element topic="manage-score-reset.topic"/>
+            </toc-element>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
                 <toc-element topic="warn-add-evidence.topic"/>
