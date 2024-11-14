@@ -1,6 +1,7 @@
 # Warning Action
 
-The warning action describes actions that are applied to a server member when receiving a warning, once their amount of active warnings have reached a certain threshold.
+The warning action describes actions that are applied to a server member when receiving a warning, once their amount of
+active warnings have reached a certain threshold.
 
 ## Possible values
 
