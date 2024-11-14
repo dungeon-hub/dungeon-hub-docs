@@ -17,6 +17,7 @@
     </build-profile>
 
     <footer>
+        <social type="email" href="admin@dungeon-hub.net"/>
         <link href="https://discord.dungeon-hub.net/">Discord</link>
         <link href="https://api.dungeon-hub.net/">API</link>
         <link href="https://invite.dungeon-hub.net/">Invite the bot</link>
