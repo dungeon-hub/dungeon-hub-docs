@@ -1,3 +1,3 @@
-# Dungeon Hub Website  ✏️
+# Dungeon Hub Website ✏️
 
 `Coming soon`

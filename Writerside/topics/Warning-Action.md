@@ -8,5 +8,5 @@ active warnings have reached a certain threshold.
 - Timeout
 - Ban
 - Remove Role
-- Remove Role Group
+- Remove [Role Group](Role-Group.md)
 - Add Role

@@ -33,6 +33,7 @@
             <toc-element topic="Carry-Type.md"/>
             <toc-element topic="Carry-Tier.md"/>
             <toc-element topic="Carry-Difficulty.md"/>
+            <toc-element topic="Role-Group.md"/>
             <toc-element topic="Score-Type.md"/>
             <toc-element topic="Warning-Action.md"/>
             <toc-element topic="Warning-Punishment.md"/>
