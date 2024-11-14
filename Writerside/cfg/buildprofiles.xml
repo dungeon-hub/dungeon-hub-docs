@@ -8,10 +8,17 @@
         <custom-favicons>favicon.ico</custom-favicons>
         <header-logo>favicon.png</header-logo>
     </variables>
+
     <build-profile instance="dhub">
         <variables>
-            <noindex-content>true</noindex-content>
+            <noindex-content>false</noindex-content>
         </variables>
+        <sitemap priority="0.35" change-frequency="monthly"/>
     </build-profile>
 
+    <footer>
+        <link href="https://discord.dungeon-hub.net/">Discord</link>
+        <link href="https://api.dungeon-hub.net/">API</link>
+        <link href="https://invite.dungeon-hub.net/">Invite the bot</link>
+    </footer>
 </buildprofiles>
