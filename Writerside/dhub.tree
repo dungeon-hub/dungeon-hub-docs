@@ -9,6 +9,8 @@
     <toc-element topic="Welcome.md"/>
     <toc-element topic="Dungeon-Hub-Bot.md">
         <toc-element topic="Features.md">
+            <toc-element topic="Embed-Management.md"/>
+            <toc-element topic="Role-Management.md"/>
             <toc-element topic="Warnings.md"/>
         </toc-element>
         <toc-element topic="Commands.md">
@@ -27,6 +29,7 @@
             </toc-element>
             <toc-element topic="warns.topic"/>
         </toc-element>
+        <toc-element topic="User-Commands.md"/>
     </toc-element>
     <toc-element topic="Dungeon-Hub-API.md">
         <toc-element topic="Entities.md">
