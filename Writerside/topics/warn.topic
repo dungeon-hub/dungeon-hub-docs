@@ -27,9 +27,9 @@
 
     <chapter title="Sub-Commands" id="sub-commands">
         <list>
-            <li><a href="warn-add.topic"/>: Add a warning to a user.</li>
-            <li><a href="warn-deactivate.topic"/>: Deactivate a warning by id, which causes it to not be included in punishment calculations, it will also not be displayed to regular users anymore.</li>
-            <li><a href="warn-list-all.topic"/>: List all warnings a given user ever received, even if deactivated.</li>
+            <li><a href="warn-add.topic"/>: Add a <a href="Warnings.md">warning</a> to a user.</li>
+            <li><a href="warn-deactivate.topic"/>: Deactivate a <a href="Warnings.md">warning</a> by id, which causes it to not be included in punishment calculations, it will also not be displayed to regular users anymore.</li>
+            <li><a href="warn-list-all.topic"/>: List all <a href="Warnings.md">warnings</a> a given user ever received, even if deactivated.</li>
             <li><a href="warn-add-evidence.topic"/>: Add an evidence to a user, in the form of a text or an image.</li>
         </list>
     </chapter>

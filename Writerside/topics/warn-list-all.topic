@@ -3,7 +3,35 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/warn list-all ✏️" id="warn-list-all">
+       title="/warn list-all" id="warn-list-all">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">List all warnings of a user, active or not.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <img alt="warn-list-all-1.png" src="warn-list-all-1.png" width="325" style="inline" border-effect="rounded"/>
+        <img alt="warn-list-all-empty.png" src="warn-list-all-empty.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <!--<td>Additional</td>-->
+            </tr>
+
+            <tr>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>The user to see the warnings of.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
 </topic>
