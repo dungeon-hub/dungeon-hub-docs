@@ -5,11 +5,9 @@
        id="Dungeon-Hub-API" title="Dungeon Hub API">
     <chapter title="What is the Dungeon Hub API" id="what-is-the-dungeon-hub-api">
         <p>The Dungeon Hub API hosts all data that is used in the <a href="Dungeon-Hub-Bot.md"/>. <br/>The <a
-                href="Dungeon-Hub-Bot.md"/> itself only serves as a client to interact with the API - it does not
-            have any database
-            access and only persists data through the API.
-            A documentation with all endpoints and their usage can be found at <a
-                    href="https://api.dungeon-hub.net/"/>.</p>
+                href="Dungeon-Hub-Bot.md"/> itself only serves as a client to interact with the API - it does not have
+            any database access and only persists data through the API. A documentation with all endpoints and their
+            usage can be found at <a href="https://api.dungeon-hub.net/"/>.</p>
     </chapter>
     <chapter title="Authentication" id="authentication">
         <p>Most endpoints of the Dungeon Hub API require authentication. <br/>The API uses bearer tokens for
