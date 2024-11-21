@@ -18,6 +18,13 @@
              border-effect="rounded"/>
     </chapter>
 
+    <chapter title="Description" id="description">
+        <p>This command deactivates a given warning.</p>
+        <p>This will mean that the warning will no longer be shown in <a href="warns.topic"/> and will no longer have an
+            effect when <a href="Warning-Punishment.md">punishments</a> are calculated.</p>
+        <p>You can read more about managing warnings <a href="Warnings.md" anchor="managing-warnings">here</a>.</p>
+    </chapter>
+
     <chapter title="Arguments" id="arguments" collapsible="true">
         <table style="header-row">
             <tr>

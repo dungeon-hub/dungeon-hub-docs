@@ -3,7 +3,61 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/warn add-evidence ✏️" id="warn-add-evidence">
+       title="/warn add-evidence" id="warn-add-evidence">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Adds evidence to a warning.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <img alt="warn-add-evidence-1.png" src="warn-add-evidence-1.png" width="325" style="inline"
+             border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="Description" id="description">
+        <p>This command adds evidence to a warning.</p>
+        <p>Please note that you should only supply either an attachment or a text, not both. If you supply both, only
+            the attachment will be added as an evidence, the text will be ignored.</p>
+        <p>You can read more about managing warnings <a href="Warnings.md" anchor="managing-warnings">here</a>.</p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+
+            <tr>
+                <td><code>id</code></td>
+                <td>Number (long)</td>
+                <td>The id of the warning.</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Min value: 1</li>
+                    </list>
+                </td>
+            </tr>
+
+            <tr>
+                <td><code>attachment</code></td>
+                <td>Attachment</td>
+                <td>Add an attachment (image or similar) as evidence.</td>
+                <td>:white_check_mark: Yes</td>
+            </tr>
+
+            <tr>
+                <td><code>text</code></td>
+                <td>String</td>
+                <td>Add a text (or link) as evidence.</td>
+                <td>:white_check_mark: Yes</td>
+            </tr>
+        </table>
+    </chapter>
 </topic>

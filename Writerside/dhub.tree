@@ -13,6 +13,7 @@
             <toc-element topic="Role-Management.md"/>
             <toc-element topic="Warnings.md"/>
         </toc-element>
+        <toc-element topic="Server-Property.md"/>
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
             <toc-element topic="leaderboard.topic"/>
