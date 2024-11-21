@@ -13,7 +13,7 @@ You can select the topic you want to learn about below.
 <a href="Dungeon-Hub-Bot.md"></a>
 </li>
 <li>
-<a href="Dungeon-Hub-API.md"></a>
+<a href="Dungeon-Hub-API.topic"></a>
 </li>
 <li>
 <a href="Dungeon-Hub-Website.md"></a>

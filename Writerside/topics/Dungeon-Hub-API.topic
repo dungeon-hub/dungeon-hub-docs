@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="Dungeon-Hub-API" title="Dungeon Hub API">
+    <chapter title="What is the Dungeon Hub API" id="what-is-the-dungeon-hub-api">
+        <p>The Dungeon Hub API hosts all data that is used in the <a href="Dungeon-Hub-Bot.md"/>. <br/>The <a
+                href="Dungeon-Hub-Bot.md"/> itself only serves as a client to interact with the API - it does not
+            have any database
+            access and only persists data through the API.
+            A documentation with all endpoints and their usage can be found at <a
+                    href="https://api.dungeon-hub.net/"/>.</p>
+    </chapter>
+    <chapter title="Authentication" id="authentication">
+        <p>Most endpoints of the Dungeon Hub API require authentication. <br/>The API uses bearer tokens for
+            authentication, meaning an Authorization header containing the JWT token must be attached
+            to the request. <br/>The header should look like: <code>Authorization: Bearer &lt;token&gt;</code>. <br/>A
+            token can be obtained from the authentication server, which is hosted separately to the API
+            at <a href="https://auth.dungeon-hub.net/"/>.</p>
+        <chapter title="Logging in as a user" id="logging-in-as-a-user">
+            <p><code>Coming soon</code></p>
+        </chapter>
+        <chapter title="Logging in as a client" id="logging-in-as-a-client">
+            <warning>
+                <p>This requires a client to be registered manually. If you're interested in this, please contact <a
+                        href="mailto:admin@dungeon-hub.net">the administration</a>.
+                </p>
+            </warning>
+            <p>To log in as a client, you need to send a <code>POST</code> request to
+                <code>https://auth.dungeon-hub.net/realms/dungeon-hub/protocol/openid-connect/token</code>. <br/>The
+                request body should be a multipart form containing the following fields:</p>
+            <list>
+                <li><code>client_id</code>: <code>dh-server</code></li>
+                <li><code>grant_type</code>: <code>client_credentials</code></li>
+            </list>
+            <p>As the Authorization header, you should use basic authentication with the client's credentials (client id
+                as username,
+                client secret as password).</p>
+        </chapter>
+    </chapter>
+    <chapter title="Connecting to the API" id="connecting-to-the-api">
+        <p>All API endpoints are reachable under <a href="https://api.dungeon-hub.net/"/>. A simple documentation of
+            all endpoints is available there. <br/>To ease the connection to the API, a Kotlin/JVM library containing
+            all models that the API uses in requests and responses, as well as a library to send requests to all
+            possible endpoints is available at <a href="https://github.com/dungeon-hub/dungeon-hub-api"/>.</p>
+        <chapter title="Importing the client library" id="importing-client">
+            <tabs>
+                <tab id="gradle-kotlin-import" title="Gradle (Kotlin)">
+                    <p>First of all, add a dependency to your <code>gradle/libs.versions.toml</code> file.</p>
+                    <p>This file is used to declare the versions of libraries you use in one central place.</p>
+
+                    <!--suppress WrsCodeBlockWidthInspection -->
+                    <code-block lang="toml">
+                        [versions]
+                        dungeon-hub-api-client = "%client-version%"
+
+                        [libraries]
+                        dungeon-hub-api-client = {module = "net.dungeon-hub.api:client", version.ref = "dungeon-hub-api-client" }
+                    </code-block>
+
+                    <p>Then, you can simply add the dependency to your <code>build.gradle.kts</code> file.</p>
+
+                    <code-block lang="kotlin">
+                        repositories {
+                            // other repositories
+
+                            mavenCentral()
+                        }
+
+                        dependencies {
+                            // other dependencies
+
+                            implementation(libs.dungeon.hub.api.client)
+                        }
+                    </code-block>
+                </tab>
+
+                <tab id="gradle-groovy-import" title="Gradle (Groovy)">
+                    <p>First of all, add a dependency to your <code>gradle/libs.versions.toml</code> file.</p>
+                    <p>This file is used to declare the versions of libraries you use in one central place.</p>
+
+                    <!--suppress WrsCodeBlockWidthInspection -->
+                    <code-block lang="toml">
+                        [versions]
+                        dungeon-hub-api-client = "%client-version%"
+
+                        [libraries]
+                        dungeon-hub-api-client = {module = "net.dungeon-hub.api:client", version.ref = "dungeon-hub-api-client" }
+                    </code-block>
+
+                    <p>Then, you can simply add the dependency to your <code>build.gradle</code> file.</p>
+
+                    <code-block lang="groovy">
+                        repositories {
+                            // other repositories
+
+                            mavenCentral()
+                        }
+
+                        dependencies {
+                            // other dependencies
+
+                            implementation(libs.dungeon.hub.api.client)
+                        }
+                    </code-block>
+                </tab>
+
+                <tab id="maven-import" title="Maven">
+                    Please add the following to your `pom.xml`:
+                    <code-block lang="xml">
+                        &lt;dependencies&gt;
+                            &lt;dependency&gt;
+                                &lt;groupId&gt;net.dungeon-hub.api&lt;/groupId&gt;
+                                &lt;artifactId&gt;client&lt;/artifactId&gt;
+                                &lt;version&gt;%client-version%&lt;/version&gt;
+                            &lt;/dependency&gt;
+                        &lt;/dependencies&gt;
+                    </code-block>
+                </tab>
+            </tabs>
+        </chapter>
+    </chapter>
+</topic>
