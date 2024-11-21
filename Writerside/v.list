@@ -2,4 +2,6 @@
 <!DOCTYPE vars SYSTEM "https://resources.jetbrains.com/writerside/1.0/vars.dtd">
 <vars>
     <var name="product" value="Writerside"/>
+    <var name="model-version" value="{MODEL_VERSION}"/>
+    <var name="client-version" value="{CLIENT_VERSION}"/>
 </vars>
