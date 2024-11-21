@@ -9,7 +9,7 @@ on:
 
 env:
   ARTIFACT: "webHelpDHUB2-all.zip"
-  DOCKER_VERSION: "241.18775"
+  DOCKER_VERSION: "243.21565"
   INSTANCE: "Writerside/dhub"
 
 permissions:
