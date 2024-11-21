@@ -99,7 +99,7 @@ jobs:
 
           cp -r docs/* .
 
-          sudo rm -rf docs Writerside .github .idea .editorconfig .gitignore Dockerfile README.md
+          sudo rm -rf docs Writerside .github .idea .editorconfig .gitignore Dockerfile README.md ${{ env.ARTIFACT }}
 
           git add .
           git commit -am "Automatic deployment"

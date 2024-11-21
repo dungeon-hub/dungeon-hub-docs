@@ -14,7 +14,12 @@ env:
 
 permissions:
   contents: write
+  pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -68,6 +73,10 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
 
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -99,8 +108,19 @@ jobs:
 
           cp -r docs/* .
 
-          sudo rm -rf docs Writerside .github .idea .editorconfig .gitignore Dockerfile README.md
+          sudo rm -rf docs Writerside .github .idea .editorconfig .gitignore Dockerfile README.md ${{ env.ARTIFACT }}
 
           git add .
           git commit -am "Automatic deployment"
           git push --force origin preview-deployment
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
