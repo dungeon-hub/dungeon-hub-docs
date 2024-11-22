@@ -35,4 +35,4 @@ channel. \
 The log channel depends on the [](Warning-Type.md):
 If the [warning type](Warning-Type.md) is either `Serious`, `Major` or `Minor`, the message is sent into the channel of
 the [server property `MODERATION_LOGS_CHANNEL`](Server-Property.md), otherwise it's sent into the
-[`STRIKES_LOG_CHANNEL`](Server-Property.md).
+[`STRIKES_LOGS_CHANNEL`](Server-Property.md).
