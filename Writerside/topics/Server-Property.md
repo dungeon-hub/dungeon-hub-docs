@@ -10,7 +10,7 @@ They can be managed using the sub-commands of [](config.topic), respective to th
 
 The following values can be set for the server property:
 
-### String / Text
+### String / Text {id="string"}
 
 - `BAN_MESSAGE`: The message that is sent to a user when they are banned from the server. It can contain some
   placeholders:
@@ -23,7 +23,7 @@ The following values can be set for the server property:
 
 `currently none`
 
-### Boolean (true/false)
+### Boolean (true/false) {id="boolean"}
 
 - `PROFILE_MODERATION_BAN`: If set to `true`, the bot will automatically ban users that have a flagged profile, meaning
   a suspicious username that might impersonate legitimate bots or users. Otherwise, only a log message is sent into the
