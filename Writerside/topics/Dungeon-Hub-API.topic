@@ -2,13 +2,14 @@
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       id="Dungeon-Hub-API" title="Dungeon Hub API">
+       id="Dungeon-Hub-API" title="Dungeon Hub API ✏️">
     <chapter title="What is the Dungeon Hub API" id="what-is-the-dungeon-hub-api">
         <p>The Dungeon Hub API hosts all data that is used in the <a href="Dungeon-Hub-Bot.md"/>. <br/>The <a
                 href="Dungeon-Hub-Bot.md"/> itself only serves as a client to interact with the API - it does not have
             any database access and only persists data through the API. A documentation with all endpoints and their
             usage can be found at <a href="https://api.dungeon-hub.net/"/>.</p>
     </chapter>
+
     <chapter title="Authentication" id="authentication">
         <p>Most endpoints of the Dungeon Hub API require authentication. <br/>The API uses bearer tokens for
             authentication, meaning an Authorization header containing the JWT token must be attached
@@ -36,6 +37,7 @@
                 client secret as password).</p>
         </chapter>
     </chapter>
+
     <chapter title="Connecting to the API" id="connecting-to-the-api">
         <p>All API endpoints are reachable under <a href="https://api.dungeon-hub.net/"/>. A simple documentation of
             all endpoints is available there. <br/>To ease the connection to the API, a Kotlin/JVM library containing

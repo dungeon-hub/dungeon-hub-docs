@@ -18,6 +18,11 @@
         <img alt="warn-add-dm.png" src="warn-add-dm.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 
+    <chapter title="Description" id="description">
+        <p>This command adds a warning to the given user. It also applies all available <a href="Warning-Punishment.md">punishments</a> to the user.</p>
+        <p>You can read more about managing warnings <a href="Warnings.md" anchor="managing-warnings">here</a>.</p>
+    </chapter>
+
     <chapter title="Arguments" id="arguments" collapsible="true">
         <table style="header-row">
             <tr>

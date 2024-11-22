@@ -3,7 +3,49 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/warn deactivate ✏️" id="warn-deactivate">
+       title="/warn deactivate" id="warn-deactivate">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Deactivate a given warning.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <img alt="warn-deactivate-1.png" src="warn-deactivate-1.png" width="325" style="inline"
+             border-effect="rounded"/>
+        <img alt="warn-deactivate-not-found.png" src="warn-deactivate-not-found.png" width="325" style="inline"
+             border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="Description" id="description">
+        <p>This command deactivates a given warning.</p>
+        <p>This will mean that the warning will no longer be shown in <a href="warns.topic"/> and will no longer have an
+            effect when <a href="Warning-Punishment.md">punishments</a> are calculated.</p>
+        <p>You can read more about managing warnings <a href="Warnings.md" anchor="managing-warnings">here</a>.</p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+
+            <tr>
+                <td><code>id</code></td>
+                <td>Number (long)</td>
+                <td>The id of the warning.</td>
+                <td>:x: No</td>
+                <td>
+                    <list>
+                        <li>Min value: 1</li>
+                    </list>
+                </td>
+            </tr>
+        </table>
+    </chapter>
 </topic>
