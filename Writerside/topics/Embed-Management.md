@@ -10,8 +10,8 @@ This feature is mainly enabled through the command [](embed.topic).
 Most sub-commands of [](embed.topic) expect the embed-data to be passed as a json-string.
 This can either contain one object, or a json array of multiple object.
 You can get an example of the format that is used by running the command [](embed-get.topic) and supplying the message
-link of a message with an embed.
-The format that is expected looks like this:
+link of a message with an embed. \
+The format that is expected in those arguments looks like this:
 
 ```json
 {
