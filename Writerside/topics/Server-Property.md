@@ -1,4 +1,4 @@
-# Server Property ✏️
+# Server Property
 
 The server property is a way to store and manage server-specific settings that are used across multiple commands.
 This includes settings like the moderation log channel, the strike log channel, the score management role, and more.

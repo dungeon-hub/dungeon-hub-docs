@@ -18,7 +18,7 @@ The format that is expected in those arguments looks like this:
   "title": "title",
   "description": "description",
   "url": "url for title",
-  "timestamp": "timestamp in epoch seconds",
+  "timestamp": "timestamp in epoch milliseconds",
   "color": "color in hex format, with leading #",
   "image": "example image url",
   "footer": {
@@ -79,3 +79,39 @@ The format that is expected in those arguments looks like this:
 }
 ``` 
 {collapsible="true" default-state="collapsed" collapsed-title="Example Embed"}
+
+### URL format
+
+Some fields in the embed can contain a URL. This URL is often a link to an image that should be used, but it can reference any possible url.
+These fields are checked before the embed is sent, and any of the URLs are not valid, an error will be shown.
+The URL must contain a valid protocol, meaning it must start with e.g. `http://` or `https://`.
+
+### Message Link
+
+The message link is a link to a message in discord, which can be obtained by right-clicking on a message and selecting `Copy Message Link`.
+This link is used to identify the message that should be edited or read from. \
+The regex that is used to match the message link is: 
+```regex
+(?x)                             # enable comment mode
+(?i)                             # ignore case
+(?:https?+://)?+                 # 'https://' or 'http://' or ''
+(?:(?:canary|ptb)\\.)?+          # 'canary.' or 'ptb.'
+discord(?:app)?+\\.com/channels/ # 'discord(app).com/channels/'
+(?:(?<server>[0-9]++)|@me)       # '@me' or the server id as named group
+/                                # '/'
+(?<channel>[0-9]++)              # the textchannel id as named group
+/                                # '/'
+(?<message>[0-9]++)              # the message id as named group
+```
+{collapsible="true" default-state="expanded" collapsed-title="Message Link Regex"}
+
+### Timestamp
+
+The `timestamp` field is a unix timestamp in milliseconds. This is used to display a timestamp in the embed. \
+You can convert a date to a timestamp and vice versa by using websites like [this](https://www.epochconverter.com/). \
+Please make sure that the timestamp is in milliseconds, as the bot will not convert it for you, resulting in incorrect dates being shown.
+
+### Color
+
+The `color` field is a hex color code, with a leading `#`. This color is used to color the left bar of the embed. \
+You can use websites like [this](https://www.w3schools.com/colors/colors_picker.asp) or [this](https://www.color-hex.com/) to find a color you like.
