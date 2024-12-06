@@ -8,7 +8,7 @@ This feature is mainly enabled through the command [](embed.topic).
 ## Embed Format
 
 Most sub-commands of [](embed.topic) expect the embed-data to be passed as a json-string.
-This can either contain one object, or a json array of multiple object.
+This can either contain one object, or a json array of multiple objects.
 You can get an example of the format that is used by running the command [](embed-get.topic) and supplying the message
 link of a message with an embed. \
 The format that is expected in those arguments looks like this:
@@ -83,7 +83,7 @@ The format that is expected in those arguments looks like this:
 ### URL format
 
 Some fields in the embed can contain a URL. This URL is often a link to an image that should be used, but it can reference any possible url.
-These fields are checked before the embed is sent, and any of the URLs are not valid, an error will be shown.
+These fields are checked before the embed is sent, and if any of the URLs are not valid, an error will be shown.
 The URL must contain a valid protocol, meaning it must start with e.g. `http://` or `https://`.
 
 ### Message Link
