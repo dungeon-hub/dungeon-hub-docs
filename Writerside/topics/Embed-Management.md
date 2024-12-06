@@ -89,8 +89,7 @@ The URL must contain a valid protocol, meaning it must start with e.g. `http://`
 ### Message Link
 
 The message link is a link to a message in discord, which can be obtained by right-clicking on a message and selecting `Copy Message Link`.
-This link is used to identify the message that should be edited or read from. \
-The regex that is used to match the message link is: 
+This link is used to identify the message that should be edited or read from.
 ```regex
 (?x)                             # enable comment mode
 (?i)                             # ignore case
@@ -103,7 +102,7 @@ discord(?:app)?+\\.com/channels/ # 'discord(app).com/channels/'
 /                                # '/'
 (?<message>[0-9]++)              # the message id as named group
 ```
-{collapsible="true" default-state="expanded" collapsed-title="Message Link Regex"}
+{collapsible="true" default-state="collapsed" collapsed-title="Message Link Regex"}
 
 ### Timestamp
 
