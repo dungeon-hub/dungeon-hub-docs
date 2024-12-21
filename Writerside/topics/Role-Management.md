@@ -7,7 +7,7 @@ cover the various commands and features available to you as a server administrat
 
 It is possible to set roles to automatically be applied to users based on a certain criteria.
 A list of all possible actions can be found [here](Role-Action.md#possible-values). \
-The role actions for all roles are checked on a user's roles are synced.
+The role actions for all roles are checked once a user's roles are synced.
 
 ## Role Requirements
 
