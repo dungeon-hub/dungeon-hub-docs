@@ -1,0 +1,88 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-12-27T00:59:39.369793807"><title>Embed Management ✏️ | Dungeon Hub</title><script type="application/json" id="virtual-toc-data">[{"id":"embed-format","level":0,"title":"Embed Format","anchor":"#embed-format"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Embed Management ✏️ | Dungeon Hub"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Dungeon Hub Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/embed-management.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Embed Management ✏️ | Dungeon Hub"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/embed-management.html#webpage",
+    "url": "writerside-documentation/embed-management.html",
+    "name": "Embed Management ✏️ | Dungeon Hub",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Dungeon Hub Help"
+}</script><!-- End Schema.org --></head><body data-id="Embed-Management" data-main-title="Embed Management ✏️" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Dungeon-Hub-Bot.md|Dungeon Hub Bot///Features.md|Features"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Dungeon Hub  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Embed-Management" id="Embed-Management.md">Embed Management ✏️</h1><p id="amhdfy_3">The Dungeon Hub Bot contains an advanced feature to read message data from embeds, send new embeds and also edit them afterward. This feature fully supports adding multiple embeds onto one message, which is supported by discord. This feature is mainly enabled through the command <a href="embed.html" id="amhdfy_5" data-tooltip="Makes it possible to manage embeds.">/embed</a>.</p><section class="chapter"><h2 id="embed-format" data-toc="embed-format">Embed Format</h2><p id="amhdfy_6">Most sub-commands of <a href="embed.html" id="amhdfy_13" data-tooltip="Makes it possible to manage embeds.">/embed</a> expect the embed-data to be passed as a json-string. This can either contain one object, or a json array of multiple objects. You can get an example of the format that is used by running the command <a href="embed-get.html" id="amhdfy_14" data-tooltip="Coming soon">/embed get ✏️</a> and supplying the message link of a message with an embed. <br> The format that is expected in those arguments looks like this:</p><div class="code-collapse" data-lang="json" data-is-expanded="true" data-synopsis="Format">
+{
+  &quot;title&quot;: &quot;title&quot;,
+  &quot;description&quot;: &quot;description&quot;,
+  &quot;url&quot;: &quot;url for title&quot;,
+  &quot;timestamp&quot;: &quot;timestamp in epoch milliseconds&quot;,
+  &quot;color&quot;: &quot;color in hex format, with leading #&quot;,
+  &quot;image&quot;: &quot;example image url&quot;,
+  &quot;footer&quot;: {
+    &quot;text&quot;: &quot;footer text&quot;,
+    &quot;icon&quot;: &quot;icon url&quot;
+  },
+  &quot;thumbnail&quot;: {
+    &quot;url&quot;: &quot;thumbnail url&quot;
+  },
+  &quot;author&quot;: {
+    &quot;name&quot;: &quot;author name&quot;,
+    &quot;url&quot;: &quot;author url&quot;,
+    &quot;icon&quot;: &quot;author icon url&quot;
+  },
+  &quot;fields&quot;: [
+    {
+      &quot;name&quot;: &quot;field name&quot;,
+      &quot;value&quot;: &quot;field value&quot;,
+      &quot;inline&quot;: &quot;boolean, if the field should be inline&quot;
+    }
+  ]
+}
+</div><div class="code-collapse" data-lang="json" data-is-expanded="false" data-synopsis="Example Embed">
+{
+  &quot;title&quot;: &quot;Example Embed&quot;,
+  &quot;description&quot;: &quot;Example embed, just to try it out&quot;,
+  &quot;url&quot;: &quot;https://example.com/&quot;,
+  &quot;timestamp&quot;: 1732920448245,
+  &quot;color&quot;: &quot;#A51770&quot;,
+  &quot;image&quot;: &quot;https://static.dungeon-hub.net/blaze.png&quot;,
+  &quot;footer&quot;: {
+    &quot;text&quot;: &quot;footer text&quot;,
+    &quot;icon&quot;: &quot;https://static.dungeon-hub.net/favicon.gif&quot;
+  },
+  &quot;thumbnail&quot;: {
+    &quot;url&quot;: &quot;https://static.dungeon-hub.net/enderman.png&quot;
+  },
+  &quot;author&quot;: {
+    &quot;name&quot;: &quot;author name&quot;,
+    &quot;url&quot;: &quot;https://example.com/&quot;,
+    &quot;icon&quot;: &quot;https://static.dungeon-hub.net/livid.png&quot;
+  },
+  &quot;fields&quot;: [
+    {
+      &quot;name&quot;: &quot;field name&quot;,
+      &quot;value&quot;: &quot;field value&quot;,
+      &quot;inline&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;field name 2&quot;,
+      &quot;value&quot;: &quot;field value 2&quot;,
+      &quot;inline&quot;: false
+    }
+  ]
+}
+</div><section class="chapter"><h3 id="url-format" data-toc="url-format">URL format</h3><p id="amhdfy_16">Some fields in the embed can contain a URL. This URL is often a link to an image that should be used, but it can reference any possible url. These fields are checked before the embed is sent, and if any of the URLs are not valid, an error will be shown. The URL must contain a valid protocol, meaning it must start with e.g. <code class="code" id="amhdfy_17">http://</code> or <code class="code" id="amhdfy_18">https://</code>.</p></section><section class="chapter"><h3 id="message-link" data-toc="message-link">Message Link</h3><p id="amhdfy_19">The message link is a link to a message in discord, which can be obtained by right-clicking on a message and selecting <code class="code" id="amhdfy_21">Copy Message Link</code>. This link is used to identify the message that should be edited or read from.</p><div class="code-collapse" data-lang="regex" data-is-expanded="false" data-synopsis="Message Link Regex">
+(?x)                             # enable comment mode
+(?i)                             # ignore case
+(?:https?+://)?+                 # 'https://' or 'http://' or ''
+(?:(?:canary|ptb)\\.)?+          # 'canary.' or 'ptb.'
+discord(?:app)?+\\.com/channels/ # 'discord(app).com/channels/'
+(?:(?&lt;server&gt;[0-9]++)|@me)       # '@me' or the server id as named group
+/                                # '/'
+(?&lt;channel&gt;[0-9]++)              # the textchannel id as named group
+/                                # '/'
+(?&lt;message&gt;[0-9]++)              # the message id as named group
+</div></section><section class="chapter"><h3 id="timestamp" data-toc="timestamp">Timestamp</h3><p id="amhdfy_22">The <code class="code" id="amhdfy_23">timestamp</code> field is a unix timestamp in milliseconds. This is used to display a timestamp in the embed. <br> You can convert a date to a timestamp and vice versa by using websites like <a href="https://www.epochconverter.com/" id="amhdfy_25" data-external="true" rel="noopener noreferrer">this</a>. <br> Please make sure that the timestamp is in milliseconds, as the bot will not convert it for you, resulting in incorrect dates being shown.</p></section><section class="chapter"><h3 id="color" data-toc="color">Color</h3><p id="amhdfy_27">The <code class="code" id="amhdfy_28">color</code> field is a hex color code, with a leading <code class="code" id="amhdfy_29">#</code>. This color is used to color the left bar of the embed. <br> You can use websites like <a href="https://www.w3schools.com/colors/colors_picker.asp" id="amhdfy_31" data-external="true" rel="noopener noreferrer">this</a> or <a href="https://www.color-hex.com/" id="amhdfy_32" data-external="true" rel="noopener noreferrer">this</a> to find a color you like.</p></section></section><div class="last-modified">Last modified: 27 December 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="features.html" class="navigation-links__prev">Features</a><a href="role-management.html" class="navigation-links__next">Role Management ✏️</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>
