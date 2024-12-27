@@ -29,6 +29,11 @@
                 <toc-element topic="manage-score-remove.topic"/>
                 <toc-element topic="manage-score-reset.topic"/>
             </toc-element>
+            <toc-element topic="role.topic">
+                <toc-element topic="role-requirements.topic">
+                    <toc-element topic="role-requirements-add.topic"/>
+                </toc-element>
+            </toc-element>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
                 <toc-element topic="warn-add-evidence.topic"/>
@@ -46,6 +51,7 @@
             <toc-element topic="Carry-Difficulty.md"/>
             <toc-element topic="Role-Action.md"/>
             <toc-element topic="Role-Group.md"/>
+            <toc-element topic="Role-Requirement-Type.md"/>
             <toc-element topic="Score-Type.md"/>
             <toc-element topic="Warning-Action.md"/>
             <toc-element topic="Warning-Punishment.md"/>
