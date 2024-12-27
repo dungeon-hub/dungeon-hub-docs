@@ -17,11 +17,22 @@
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
             <toc-element topic="config.topic"/>
+            <toc-element topic="embed.topic">
+                <toc-element topic="embed-add.topic"/>
+                <toc-element topic="embed-edit.topic"/>
+                <toc-element topic="embed-get.topic"/>
+                <toc-element topic="embed-send.topic"/>
+            </toc-element>
             <toc-element topic="leaderboard.topic"/>
             <toc-element topic="manage-score.topic">
                 <toc-element topic="manage-score-add.topic"/>
                 <toc-element topic="manage-score-remove.topic"/>
                 <toc-element topic="manage-score-reset.topic"/>
+            </toc-element>
+            <toc-element topic="role.topic">
+                <toc-element topic="role-requirements.topic">
+                    <toc-element topic="role-requirements-add.topic"/>
+                </toc-element>
             </toc-element>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
@@ -38,7 +49,9 @@
             <toc-element topic="Carry-Type.md"/>
             <toc-element topic="Carry-Tier.md"/>
             <toc-element topic="Carry-Difficulty.md"/>
+            <toc-element topic="Role-Action.md"/>
             <toc-element topic="Role-Group.md"/>
+            <toc-element topic="Role-Requirement-Type.md"/>
             <toc-element topic="Score-Type.md"/>
             <toc-element topic="Warning-Action.md"/>
             <toc-element topic="Warning-Punishment.md"/>

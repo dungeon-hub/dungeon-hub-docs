@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/embed" id="embed">
+
+    <tldr>
+        <p>
+            <format style="italic">Makes it possible to manage embeds.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage Messages</code>
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="embed-add.topic"/>: Add a new embed to a message by this bot.</li>
+            <li><a href="embed-edit.topic"/>: Edit a specific embed on a message.</li>
+            <li><a href="embed-get.topic"/>: Display all embed data of a given message.</li>
+            <li><a href="embed-send.topic"/>: Send a new message containing the given embed(s).</li>
+        </list>
+    </chapter>
+</topic>

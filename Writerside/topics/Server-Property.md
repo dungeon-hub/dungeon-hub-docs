@@ -1,12 +1,16 @@
-# Server Property ✏️
+# Server Property
 
 The server property is a way to store and manage server-specific settings that are used across multiple commands.
 This includes settings like the moderation log channel, the strike log channel, the score management role, and more.
 
-The settings can be changes using the sub-commands of [](config.topic). \
-A list of all available server properties can be found below.
+## Possible values
 
-## String / Text
+There are currently a set amount of possible server properties that can be set.
+They can be managed using the sub-commands of [](config.topic), respective to the type of config property.
+
+The following values can be set for the server property:
+
+### String / Text {id="string"}
 
 - `BAN_MESSAGE`: The message that is sent to a user when they are banned from the server. It can contain some
   placeholders:
@@ -15,17 +19,17 @@ A list of all available server properties can be found below.
 - `UNBAN_FORM`: The link to the unban form that is sent to a user when they are banned from the server. If it is
   present, it will be attached to the message as a link button, so please make sure that it is in a proper link format.
 
-## Number
+### Number
 
 `currently none`
 
-## Boolean (true/false)
+### Boolean (true/false) {id="boolean"}
 
 - `PROFILE_MODERATION_BAN`: If set to `true`, the bot will automatically ban users that have a flagged profile, meaning
   a suspicious username that might impersonate legitimate bots or users. Otherwise, only a log message is sent into the
   `MODERATION_LOGS_CHANNEL`.
 
-## Channel
+### Channel
 
 - `MODERATION_LOGS_CHANNEL`: The channel where moderation logs are sent to. This includes all messages about warnings
   and messages when a user is flagged.
@@ -43,11 +47,11 @@ A list of all available server properties can be found below.
 - `CNT_MESSAGES_CHANNEL`: `Coming soon`
 - `CNT_INFORMATION_CHANNEL`: `Coming soon`
 
-## Category
+### Category
 
 `currently none`
 
-## Role
+### Role
 
 - `SCORE_MANAGEMENT_ROLE`: The score management role affect which users are allowed to manage the score of other users
   using the [](manage-score.topic) command. If a user does not have this role, they are not allowed to manage the score
