@@ -31,3 +31,8 @@ This is checked every time the users roles are synced.
     - WIP, not implemented yet
 - Guild Rank
     - WIP, not implemented yet
+- Magical Power
+    - WIP, not implemented yet
+- Class Average
+- Highest Crit Damage
+    - WIP, not implemented yet
