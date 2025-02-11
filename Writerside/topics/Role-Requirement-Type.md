@@ -26,13 +26,12 @@ This is checked every time the users roles are synced.
     - Extra data is [parsed](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/-companion/parse.html)
       as a [duration](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.time/-duration/to-string.html)
 - Hypixel Rank
-    - WIP, not implemented yet
+    - The Hypixel rank is parsed to a number, with Player (no rank) being 0, VIP being 1, and so on. You can see the full list of possible ranks [here](https://github.com/dungeon-hub/hypixel-wrapper/blob/main/src/main/kotlin/net/dungeonhub/hypixel/entities/player/KnownRank.kt).
 - Guild Membership
     - WIP, not implemented yet
 - Guild Rank
     - WIP, not implemented yet
 - Magical Power
-    - WIP, not implemented yet
 - Class Average
 - Highest Crit Damage
     - WIP, not implemented yet
