@@ -41,4 +41,3 @@ This is checked every time the users roles are synced.
 - Magical Power
 - Class Average
 - Highest Crit Damage
-    - WIP, not implemented yet
