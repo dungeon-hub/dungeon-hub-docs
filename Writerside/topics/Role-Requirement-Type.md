@@ -41,3 +41,5 @@ This is checked every time the users roles are synced.
 - Magical Power
 - Class Average
 - Highest Crit Damage
+- Bingo Rank
+- Total Bingo Points
