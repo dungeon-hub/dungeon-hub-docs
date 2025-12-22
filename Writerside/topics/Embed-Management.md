@@ -1,17 +1,30 @@
 # Embed Management ✏️
 
-The Dungeon Hub Bot contains an advanced feature to read message data from embeds, send new embeds and also edit them
-afterward.
-This feature fully supports adding multiple embeds onto one message, which is supported by discord.
-This feature is mainly enabled through the command [](embed.topic).
+Work with Discord embeds directly: read existing embeds, send new ones, and modify embeds on bot messages.
+Multiple embeds per message are supported (as Discord allows).
+Use the [](embed.topic) command to access these features.
 
 ## Embed Format
 
-Most sub-commands of [](embed.topic) expect the embed-data to be passed as a json-string.
-This can either contain one object, or a json array of multiple objects.
-You can get an example of the format that is used by running the command [](embed-get.topic) and supplying the message
-link of a message with an embed. \
-The format that is expected in those arguments looks like this:
+Most [](embed.topic) sub-commands expect embed data as a JSON string. Provide either a single object (one embed) or a JSON array (multiple embeds).
+To inspect the exact format, run [](embed-get.topic) on a message with an embed.
+
+Supported input fields when sending/editing:
+
+- `title`: String
+- `description`: String
+- `url`: String
+- `timestamp`: Unix timestamp in milliseconds (number or numeric string)
+- `color`: Hex color with leading `#` (for example `#A51770`)
+- `footer`: Object with `text` and optional `icon`
+- `thumbnail`: Object with `url`
+- `author`: Either a string (name) or an object with `name`, optional `url`, optional `icon`
+- `fields`: Array of objects `{ name, value, inline }`
+- `image`: URL of an image, can be either null or omitted entirely
+
+Notes:
+
+- The `author` field accepts either a single string (used as the name) or an object with properties.
 
 ```json
 {
@@ -42,7 +55,7 @@ The format that is expected in those arguments looks like this:
   ]
 }
 ```
-{collapsible="true" default-state="expanded" collapsed-title="Format"}
+{collapsible="true" default-state="collapsed" collapsed-title="Format"}
 
 ```json
 {
@@ -80,10 +93,15 @@ The format that is expected in those arguments looks like this:
 ``` 
 {collapsible="true" default-state="collapsed" collapsed-title="Example Embed"}
 
+### CDN links and size limits
+
+- [](embed-get.topic) returns JSON in a code block by default. If the JSON exceeds ~4000 characters or if you select the `cdn` output type, the JSON is uploaded and a CDN link is returned instead.
+- [](embed-send.topic) can accept a CDN link produced by `get` or raw JSON.
+
 ### URL format
 
 Some fields in the embed can contain a URL. This URL is often a link to an image that should be used, but it can reference any possible url.
-These fields are checked before the embed is sent, and if any of the URLs are not valid, an error will be shown.
+If any of the URLs are not valid, sending may fail with an error.
 The URL must contain a valid protocol, meaning it must start with e.g. `http://` or `https://`.
 
 ### Message Link

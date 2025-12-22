@@ -5,5 +5,72 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="/embed add ✏️" id="embed-add">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Append one or more embeds to a bot message.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Adds new embed(s) to an existing message sent by this bot. Provide JSON for a single embed or an array for multiple embeds.
+        </p>
+        <p>
+            Requirements:
+        </p>
+        <list>
+            <li>The target message must be sent by this bot.</li>
+            <li>The target message must already contain at least one embed.</li>
+        </list>
+        <p>See <a href="Embed-Management.md"/> for the supported JSON fields.</p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>link</code></td>
+                <td>String</td>
+                <td>Link to the target bot message.</td>
+                <td>:x: No</td>
+                <td>Use “Copy Message Link” in Discord.</td>
+            </tr>
+            <tr>
+                <td><code>embed</code></td>
+                <td>String</td>
+                <td>Embed JSON to append.</td>
+                <td>:x: No</td>
+                <td>Single object or array of objects.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Before" id="ex-add-before">
+            <p>Target message (bot-authored) with an existing embed.</p>
+            <img alt="embed-add-before.png" src="embed-add-before.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+
+        <chapter title="Command" id="ex-add-command">
+            <code-block lang="bash">/embed add link: https://discord.com/channels/693263712626278553/693441386044850256/1452472152426025100 embed: {"title":"Server Boosted","description":"Thanks for boosting the server — enjoy your shiny new role! 💎","color":"#FEE75C","fields":[{"name":"Perks","value":"Animated icon, vanity banner, better audio","inline":false}]}</code-block>
+        </chapter>
+
+        <chapter title="After" id="ex-add-after">
+            <p>Message now contains the previous embed plus the new one appended.</p>
+            <img alt="embed-add-after.png" src="embed-add-after.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>Invalid or empty JSON returns an error.</li>
+            <li>Messages not authored by the bot cannot be modified.</li>
+        </list>
+    </chapter>
 </topic>

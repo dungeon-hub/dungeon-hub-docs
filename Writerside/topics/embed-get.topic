@@ -5,5 +5,82 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="/embed get ✏️" id="embed-get">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Display the embed JSON of a message.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Extracts embed data from a message link. You can return a readable preview (single-embed only), the raw JSON in a code block, or a CDN link to the JSON. Without <code>count</code>, all embeds on the message are returned.
+        </p>
+        <p>
+            If the message contains multiple embeds, you can select a specific one by index.
+            If the JSON is too large (about 4000+ chars) or you explicitly choose <code>cdn</code>, the JSON is uploaded and a CDN URL is returned instead of a code block.
+        </p>
+        <p>See <a href="Embed-Management.md"/> for details on the JSON format.</p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>link</code></td>
+                <td>String</td>
+                <td>Link to the target message.</td>
+                <td>:x: No</td>
+                <td>Use “Copy Message Link” in Discord.</td>
+            </tr>
+            <tr>
+                <td><code>type</code></td>
+                <td>Choice</td>
+                <td>Output format: <code>beautiful</code>, <code>source</code>, or <code>cdn</code>.</td>
+                <td>:white_check_mark: Yes</td>
+                <td>If omitted, <code>source</code> is used.</td>
+            </tr>
+            <tr>
+                <td><code>count</code></td>
+                <td>Integer</td>
+                <td>Which embed to select (0-based).</td>
+                <td>:white_check_mark: Yes</td>
+                <td>Only required if the message has multiple embeds.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li><code>beautiful</code> renders a single embed’s fields as a readable preview.</li>
+            <li><code>source</code> returns the JSON in a code block, if size allows.</li>
+            <li><code>cdn</code> uploads the JSON to the CDN and returns a URL.</li>
+        </list>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Get JSON for all embeds" id="ex-get-all">
+            <code-block lang="bash">/embed get link: https://discord.com/channels/693263712626278553/693441386044850256/1452467821563875328</code-block>
+            <p>Returns a JSON array in a code block (or a CDN link if too large).</p>
+            <img alt="embed-get-all.png" src="embed-get-all.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+
+        <chapter title="Get a readable preview (single embed)" id="ex-get-beautiful">
+            <code-block lang="bash">/embed get link: https://discord.com/channels/693263712626278553/693441386044850256/1452467821563875328 type: beautiful count: 0</code-block>
+            <p>Shows a readable preview of the first embed on that message.</p>
+            <img alt="embed-get-beautiful.png" src="embed-get-beautiful.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+
+        <chapter title="Get a CDN link" id="ex-get-cdn">
+            <code-block lang="bash">/embed get link: https://discord.com/channels/693263712626278553/693441386044850256/1452467821563875328 type: cdn</code-block>
+            <p>Uploads the JSON and returns a CDN URL.</p>
+            <img alt="embed-get-cdn.png" src="embed-get-cdn.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
 </topic>

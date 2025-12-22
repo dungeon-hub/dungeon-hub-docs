@@ -7,7 +7,7 @@
 
     <tldr>
         <p>
-            <format style="italic">Makes it possible to manage embeds.</format>
+            <format style="italic">Manage message embeds: read, send, add, and edit embeds via JSON.</format>
         </p>
 
         <p><br/></p>
@@ -23,12 +23,26 @@
         </p>
     </tldr>
 
-    <chapter title="Sub-Commands" id="sub-commands">
+    <chapter title="Description" id="description">
+        <p>
+            The embed command lets moderators work with Discord embeds directly. You can:
+        </p>
         <list>
-            <li><a href="embed-add.topic"/>: Add a new embed to a message by this bot.</li>
-            <li><a href="embed-edit.topic"/>: Edit a specific embed on a message.</li>
-            <li><a href="embed-get.topic"/>: Display all embed data of a given message.</li>
-            <li><a href="embed-send.topic"/>: Send a new message containing the given embed(s).</li>
+            <li>
+                <a href="embed-get.topic"/> – extract the embed data from an existing message as a code block, a CDN link, or a readable preview.
+            </li>
+            <li>
+                <a href="embed-send.topic"/> – post one or more embeds from JSON into a channel (optionally using a CDN link as the source).
+            </li>
+            <li>
+                <a href="embed-add.topic"/> – append one or more embeds to a message sent by this bot (requires that the message already contains at least one embed).
+            </li>
+            <li>
+                <a href="embed-edit.topic"/> – replace a specific embed on a message sent by this bot.
+            </li>
         </list>
+        <p>
+            See <a href="Embed-Management.md"/> for JSON format details and tips, including CDN usage.
+        </p>
     </chapter>
 </topic>
