@@ -5,8 +5,6 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="/leaderboard" id="leaderboard">
 
-    <title>/leaderboard</title>
-
     <tldr>
         <p>
             <format style="italic">Shows you a certain leaderboard.</format>
@@ -25,35 +23,17 @@
         </p>
     </tldr>
 
-    <chapter title="Arguments" id="arguments" collapsible="true">
-        <table style="header-row">
-            <tr>
-                <td>Name</td>
-                <td>Type</td>
-                <td>Description</td>
-                <td>Optional?</td>
-                <td>Additional</td>
-            </tr>
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="leaderboard-reputation.topic"/>: Show reputation leaderboard.</li>
+            <li><a href="leaderboard-score.topic"/>: Show score leaderboard; optionally filter by carry type and score type.</li>
+        </list>
+    </chapter>
 
-            <tr>
-                <td><code>carry-type</code></td>
-                <td><a href="Carry-Tier.md">Autocompleted String</a></td>
-                <td>The identifier of the carry type</td>
-                <td>:white_check_mark: Yes</td>
-                <td>
-                    <list>
-                        <li>Max length: 30</li>
-                    </list>
-                </td>
-            </tr>
-
-            <tr>
-                <td><code>score-type</code></td>
-                <td><a href="Score-Type.md">Enumeration</a></td>
-                <td>Select which type of score you want.</td>
-                <td>:white_check_mark: Yes</td>
-                <td> </td>
-            </tr>
-        </table>
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="score.topic"/>: personal score view used in buttons.</li>
+            <li><a href="manage-score.topic"/>: admins can adjust scores when needed.</li>
+        </list>
     </chapter>
 </topic>
