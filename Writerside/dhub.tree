@@ -9,6 +9,7 @@
     <toc-element topic="Welcome.md"/>
     <toc-element topic="Dungeon-Hub-Bot.md">
         <toc-element topic="Features.md">
+            <toc-element topic="Carry-Management.md"/>
             <toc-element topic="Embed-Management.md"/>
             <toc-element topic="Role-Management.md"/>
             <toc-element topic="Server-Property.md"/>
