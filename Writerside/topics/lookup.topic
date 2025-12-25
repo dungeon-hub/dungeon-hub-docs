@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/lookup" id="lookup">
+
+    <tldr>
+        <p>
+            <format style="italic">Check if a user or IGN is flagged.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="lookup-player.topic"/>: Check a Minecraft IGN.</li>
+            <li><a href="lookup-user.topic"/>: Check a Discord user.</li>
+            <li><a href="lookup-appeal.topic"/>: Show appeal links and guidance.</li>
+        </list>
+    </chapter>
+
+</topic>

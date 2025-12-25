@@ -30,6 +30,12 @@
                 <toc-element topic="leaderboard-reputation.topic"/>
                 <toc-element topic="leaderboard-score.topic"/>
             </toc-element>
+            <toc-element topic="log.topic"/>
+            <toc-element topic="lookup.topic">
+                <toc-element topic="lookup-appeal.topic"/>
+                <toc-element topic="lookup-player.topic"/>
+                <toc-element topic="lookup-user.topic"/>
+            </toc-element>
             <toc-element topic="manage-score.topic">
                 <toc-element topic="manage-score-add.topic"/>
                 <toc-element topic="manage-score-remove.topic"/>
