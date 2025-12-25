@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/player ✏️" id="player">
+
+    <tldr>
+        <p>
+            <format style="italic">Show player stats and a SkyCrypt link.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Fetches and displays player information for the given IGN and includes a button to open their SkyCrypt page. The displayed information is partly configurable and provided by the <a href="https://github.com/dungeon-hub/hypixel-wrapper/">Hypixel Wrapper Library</a>.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>ign</code></td>
+                <td>String</td>
+                <td>Minecraft Ingame-Name to show.</td>
+                <td>:x: No</td>
+                <td>Min length: 2</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Show player" id="ex-player">
+            <code-block lang="bash">/player ign: Taubsie</code-block>
+            <img alt="player.png" src="player.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="lookup.topic"/>: check if a user/IGN is flagged.</li>
+            <li><a href="Player-Profiles.md"/>: the feature is described here as well</li>
+        </list>
+    </chapter>
+
+</topic>

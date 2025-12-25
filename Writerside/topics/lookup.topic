@@ -31,4 +31,10 @@
         </list>
     </chapter>
 
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="player.topic"/>: broader player info includes a flag summary.</li>
+        </list>
+    </chapter>
+
 </topic>

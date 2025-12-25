@@ -10,6 +10,7 @@
     <toc-element topic="Dungeon-Hub-Bot.md">
         <toc-element topic="Features.md">
             <toc-element topic="Embed-Management.md"/>
+            <toc-element topic="Player-Profiles.md"/>
             <toc-element topic="Role-Management.md"/>
             <toc-element topic="Server-Property.md"/>
             <toc-element topic="Warnings.md"/>
@@ -41,6 +42,7 @@
                 <toc-element topic="manage-score-remove.topic"/>
                 <toc-element topic="manage-score-reset.topic"/>
             </toc-element>
+            <toc-element topic="player.topic"/>
             <toc-element topic="role.topic">
                 <toc-element topic="role-requirements.topic">
                     <toc-element topic="role-requirements-add.topic"/>
