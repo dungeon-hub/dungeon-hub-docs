@@ -16,7 +16,10 @@
         </toc-element>
         <toc-element topic="Commands.md">
             <toc-element topic="calc-price.topic"/>
-            <toc-element topic="config.topic"/>
+            <toc-element topic="config.topic">
+                <toc-element topic="config-get.topic"/>
+                <toc-element topic="config-set.topic"/>
+            </toc-element>
             <toc-element topic="embed.topic">
                 <toc-element topic="embed-add.topic"/>
                 <toc-element topic="embed-edit.topic"/>
