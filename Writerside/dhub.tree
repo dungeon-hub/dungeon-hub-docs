@@ -43,6 +43,7 @@
                 <toc-element topic="role-remove.topic"/>
                 <toc-element topic="role-remove-group.topic"/>
             </toc-element>
+            <toc-element topic="score.topic"/>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
                 <toc-element topic="warn-add-evidence.topic"/>
