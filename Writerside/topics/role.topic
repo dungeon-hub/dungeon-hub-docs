@@ -2,7 +2,38 @@
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       id="role" title="/role ✏️">
-    <p>Start typing here...</p>
+       id="role" title="/role">
+
+    <tldr>
+        <p>
+            <format style="italic">Manage roles and role requirements.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage Roles</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Add or remove a role from a user, remove full role groups, and configure per-role behavior. Administrators can also define role requirements that grant roles automatically when players meet certain conditions.
+        </p>
+    </chapter>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="role-add.topic"/>, <a href="role-remove.topic"/>, <a href="role-remove-group.topic"/>: Give or remove roles from a user.</li>
+            <li><code>config set</code>, <code>config reset</code>: Set name schema or the <a href="Role-Action.md">role action</a> for a role.</li>
+            <li><code>requirements get</code>, <code>requirements list</code>, <code>requirements add</code>, <code>requirements edit</code>, <code>requirements delete</code>: Manage <a href="Role-Management.md"/> and <a href="Role-Requirement-Type.md"/>.</li>
+        </list>
+    </chapter>
 
 </topic>

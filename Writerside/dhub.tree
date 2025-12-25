@@ -39,6 +39,9 @@
                 <toc-element topic="role-requirements.topic">
                     <toc-element topic="role-requirements-add.topic"/>
                 </toc-element>
+                <toc-element topic="role-add.topic"/>
+                <toc-element topic="role-remove.topic"/>
+                <toc-element topic="role-remove-group.topic"/>
             </toc-element>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>

@@ -5,16 +5,18 @@ cover the various commands and features available to you as a server administrat
 
 ## Role Management Flow
 
-The roles of a user are changed when a user gets synced. That can happen for a number of reasons, for example by them
-joining the server, being force-synced or using the `/sync` command. \
+The roles of a user are changed when a user gets synced. That can happen for a number of reasons, for example, by them
+joining the server, getting their roles changed by staff using [](role-add.topic) or [](role-remove.topic), being
+force-synced or using the `/sync` command. \
 When a user is synced, the following checks happen:
+
 - It is checked if the user is verified or not
-  - Based on this, the user gains or loses roles, depending on which role actions are set up.
+    - Based on this, the user gains or loses roles, depending on which role actions are set up.
 - All roles that have a role requirement are checked.
-  - If the requirements are met, the user gains the role.
-  - If the requirements are not met, the user loses the role.
+    - If the requirements are met, the user gains the role.
+    - If the requirements are not met, the user loses the role.
 - All role groups on the server are checked.
-  - The structure for this is explained in the [Role Groups](#role-groups) section.
+    - The structure for this is explained in the [Role Groups](#role-groups) section.
 
 ## Role Actions
 
