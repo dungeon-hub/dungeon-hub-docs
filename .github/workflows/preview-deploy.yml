@@ -82,9 +82,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Kotlin
-        uses: fwilhe2/setup-kotlin@main
-
       - name: Switch branch
 
         run: |
