@@ -18,7 +18,8 @@
 
     <footer>
         <social type="email" href="admin@dungeon-hub.net"/>
-        <link href="https://discord.dungeon-hub.net/">Discord</link>
+        <social type="discord" href="https://discord.dungeon-hub.net/"/>
+        <social type="github" href="https://github.com/dungeon-hub/"/>
         <link href="https://api.dungeon-hub.net/">API</link>
         <link href="https://invite.dungeon-hub.net/">Invite the bot</link>
     </footer>
