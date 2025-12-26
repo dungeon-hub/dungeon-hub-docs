@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/unlink" id="unlink">
+
+    <tldr>
+        <p>
+            <format style="italic">Unlink your Discord account from your Minecraft IGN.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Removes the link to your Minecraft account and updates your roles/nickname accordingly.
+        </p>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Unlink" id="ex-unlink">
+            <code-block lang="bash">/unlink</code-block>
+            <img alt="unlink-success.png" src="unlink-success.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="link.topic"/>: link your account again.</li>
+            <li><a href="sync.topic"/> and <a href="force-sync.topic"/>: refresh roles after unlinking.</li>
+        </list>
+    </chapter>
+
+</topic>

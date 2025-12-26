@@ -31,6 +31,7 @@
                 <toc-element topic="leaderboard-reputation.topic"/>
                 <toc-element topic="leaderboard-score.topic"/>
             </toc-element>
+            <toc-element topic="link.topic"/>
             <toc-element topic="log.topic"/>
             <toc-element topic="lookup.topic">
                 <toc-element topic="lookup-appeal.topic"/>
@@ -56,6 +57,7 @@
                 <toc-element topic="send-link-message.topic"/>
                 <toc-element topic="send-cnt-message.topic"/>
             </toc-element>
+            <toc-element topic="unlink.topic"/>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
                 <toc-element topic="warn-add-evidence.topic"/>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/link" id="link">
+
+    <tldr>
+        <p>
+            <format style="italic">Link your Discord account to your Minecraft IGN.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Links your account to a Minecraft player by IGN. If you are already linked, the bot tells you who you’re linked to and suggests /unlink.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>ign</code></td>
+                <td>String</td>
+                <td>Your Minecraft Ingame-Name.</td>
+                <td>:x: No</td>
+                <td>Min length: 2</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Link by IGN" id="ex-link-ign">
+            <code-block lang="bash">/link ign: Taubsie</code-block>
+            <img alt="link-success.png" src="link-success.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+        <chapter title="Already linked" id="ex-link-already">
+            <code-block lang="bash">/link ign: Taubsie</code-block>
+            <img alt="link-already.png" src="link-already.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="unlink.topic"/>: remove your link.</li>
+            <li><a href="sync.topic"/>, <a href="force-sync.topic"/> and <a href="mass-sync.topic"/>: refresh roles after linking.</li>
+            <li><a href="send.topic"/>: post the link-message helper.</li>
+        </list>
+    </chapter>
+
+</topic>
