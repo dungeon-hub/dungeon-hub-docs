@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/send link-message" id="send-link-message">
+
+    <tldr>
+        <p>
+            <format style="italic">Sends a message with buttons that help with linking.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage Messages</code>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>channel</code></td>
+                <td>Channel</td>
+                <td>Target channel.</td>
+                <td>:x: No</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td><code>silent</code></td>
+                <td>Boolean</td>
+                <td>Use ephemeral responses when people are linking.</td>
+                <td>:white_check_mark: Yes</td>
+                <td>Defaults to public.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/send link-message channel: #how-to-verify</code-block>
+        <img alt="send-link-message.png" src="send-link-message.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+</topic>
+

@@ -52,6 +52,10 @@
                 <toc-element topic="role-remove-group.topic"/>
             </toc-element>
             <toc-element topic="score.topic"/>
+            <toc-element topic="send.topic">
+                <toc-element topic="send-link-message.topic"/>
+                <toc-element topic="send-cnt-message.topic"/>
+            </toc-element>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
                 <toc-element topic="warn-add-evidence.topic"/>

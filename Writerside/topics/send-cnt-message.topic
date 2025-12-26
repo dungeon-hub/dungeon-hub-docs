@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/send cnt-message" id="send-cnt-message">
+
+    <tldr>
+        <p>
+            <format style="italic">Send the CNT message into the given channel.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Administrator</code>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>channel</code></td>
+                <td>Channel</td>
+                <td>Target channel.</td>
+                <td>:x: No</td>
+                <td>—</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/send cnt-message channel: #crafts-and-transfers-info</code-block>
+        <img alt="send-cnt-message.png" src="send-cnt-message.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+</topic>
+
