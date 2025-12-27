@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/mass-sync list" id="mass-sync-list">
+
+    <tldr>
+        <p>
+            <format style="italic">Show the number of users currently queued for mass syncing.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Administrator</code>
+        </p>
+    </tldr>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/mass-sync list</code-block>
+        <img alt="mass-sync-list.png" src="mass-sync-list.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+</topic>

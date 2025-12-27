@@ -28,7 +28,9 @@
                 <toc-element topic="embed-get.topic"/>
                 <toc-element topic="embed-send.topic"/>
             </toc-element>
+            <toc-element topic="find-user.topic"/>
             <toc-element topic="force-sync.topic"/>
+            <toc-element topic="ign.topic"/>
             <toc-element topic="leaderboard.topic">
                 <toc-element topic="leaderboard-reputation.topic"/>
                 <toc-element topic="leaderboard-score.topic"/>
@@ -44,6 +46,10 @@
                 <toc-element topic="manage-score-add.topic"/>
                 <toc-element topic="manage-score-remove.topic"/>
                 <toc-element topic="manage-score-reset.topic"/>
+            </toc-element>
+            <toc-element topic="mass-sync.topic">
+                <toc-element topic="mass-sync-clear.topic"/>
+                <toc-element topic="mass-sync-list.topic"/>
             </toc-element>
             <toc-element topic="player.topic"/>
             <toc-element topic="role.topic">

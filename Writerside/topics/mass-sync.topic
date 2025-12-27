@@ -34,8 +34,8 @@
         <list>
             <li><code>role</code>: Add members of a role (or @everyone) to the sync queue.</li>
             <li><code>guild</code>: Add members of a Hypixel guild to the sync queue.</li>
-            <li><code>list</code>: Show number of users currently queued.</li>
-            <li><code>clear</code>: Clear the current queue.</li>
+            <li><a href="mass-sync-list.topic"/>: Show number of users currently queued.</li>
+            <li><a href="mass-sync-clear.topic"/>: Clear the current queue.</li>
         </list>
     </chapter>
 

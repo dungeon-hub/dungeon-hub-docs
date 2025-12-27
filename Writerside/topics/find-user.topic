@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/find-user" id="find-user">
+
+    <tldr>
+        <p>
+            <format style="italic">Find the Discord user linked to a Minecraft IGN.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>ign</code></td>
+                <td>String</td>
+                <td>Minecraft Ingame-Name to search.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/find-user ign: Taubsie</code-block>
+        <img alt="find-user.png" src="find-user.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="link.topic"/>: link a Discord user to an IGN.</li>
+            <li><a href="ign.topic"/>: inverse lookup by Discord user.</li>
+        </list>
+    </chapter>
+
+</topic>
