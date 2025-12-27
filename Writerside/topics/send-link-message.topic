@@ -49,5 +49,13 @@
         <img alt="send-link-message.png" src="send-link-message.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="link.topic"/> and <a href="unlink.topic"/>: the usage of this command is described in the sent
+                message.
+            </li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
+        </list>
+    </chapter>
 </topic>
 

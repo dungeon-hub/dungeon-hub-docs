@@ -1,4 +1,4 @@
-# Role Management ✏️
+# Role Management
 
 The Dungeon Hub Bot has multiple systems in place to aid with the assignment and management of roles. This guide will
 cover the various commands and features available to you as a server administrator.
@@ -7,7 +7,7 @@ cover the various commands and features available to you as a server administrat
 
 The roles of a user are changed when a user gets synced. That can happen for a number of reasons, for example, by them
 joining the server, getting their roles changed by staff using [](role-add.topic) or [](role-remove.topic), being
-force-synced or using the `/sync` command. \
+force-synced or using the [](sync.topic) command. \
 When a user is synced, the following checks happen:
 
 - It is checked if the user is verified or not

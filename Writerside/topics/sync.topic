@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/sync" id="sync">
+
+    <tldr>
+        <p>
+            <format style="italic">Update your own roles (and nickname when configured).</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Applies the correct roles for you in this server. If a nickname schema is configured, updates your nickname as well; otherwise only roles are changed.
+        </p>
+        <p>
+            If you are not linked yet, the command will suggest linking first.
+        </p>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="/sync" id="ex-sync">
+            <code-block lang="bash">/sync</code-block>
+            <img alt="sync.png" src="sync.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+        <chapter title="/sync as Administrator" id="ex-sync-permission-problem">
+            <code-block lang="bash">/sync</code-block>
+            <img alt="sync.png" src="sync-permission-problem.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="link.topic"/>: link your Minecraft account.</li>
+            <li><a href="unlink.topic"/>: remove your link.</li>
+            <li><a href="force-sync.topic"/> and <a href="mass-sync.topic"/>: other ways to refresh roles after linking.</li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
+        </list>
+    </chapter>
+</topic>
+

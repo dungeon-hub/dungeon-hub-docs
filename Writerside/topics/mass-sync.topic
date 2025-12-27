@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/mass-sync ✏️" id="mass-sync">
+
+    <tldr>
+        <p>
+            <format style="italic">Queue many users for role/nickname syncing.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Administrator</code>
+        </p>
+    </tldr>
+
+    <chapter title="Descripotion" id="description">
+        <p>
+            This command allows you to queue many users for role/nickname syncing. This queue is server-based, where one
+            user is synced every 15 seconds.
+        </p>
+    </chapter>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><code>role</code>: Add members of a role (or @everyone) to the sync queue.</li>
+            <li><code>guild</code>: Add members of a Hypixel guild to the sync queue.</li>
+            <li><code>list</code>: Show number of users currently queued.</li>
+            <li><code>clear</code>: Clear the current queue.</li>
+        </list>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="force-sync.topic"/>: single-user alternative.</li>
+            <li><a href="link.topic"/>: make sure users are linked before syncing.</li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
+        </list>
+    </chapter>
+
+</topic>

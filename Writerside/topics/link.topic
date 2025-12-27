@@ -64,6 +64,7 @@
             <li><a href="unlink.topic"/>: remove your link.</li>
             <li><a href="sync.topic"/>, <a href="force-sync.topic"/> and <a href="mass-sync.topic"/>: refresh roles after linking.</li>
             <li><a href="send.topic"/>: post the link-message helper.</li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
         </list>
     </chapter>
 

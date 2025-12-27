@@ -40,6 +40,7 @@
         <list>
             <li><a href="link.topic"/>: link your account again.</li>
             <li><a href="sync.topic"/> and <a href="force-sync.topic"/>: refresh roles after unlinking.</li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
         </list>
     </chapter>
 
