@@ -1,0 +1,60 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2025-12-27T03:07:01.866495751"><title>Dungeon Hub API ✏️ | Dungeon Hub</title><script type="application/json" id="virtual-toc-data">[{"id":"what-is-the-dungeon-hub-api","level":0,"title":"What is the Dungeon Hub API","anchor":"#what-is-the-dungeon-hub-api"},{"id":"authentication","level":0,"title":"Authentication","anchor":"#authentication"},{"id":"connecting-to-the-api","level":0,"title":"Connecting to the API","anchor":"#connecting-to-the-api"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.25.3-b857/app.css" rel="stylesheet"><link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Dungeon Hub API ✏️ | Dungeon Hub"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Dungeon Hub Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/dungeon-hub-api.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Dungeon Hub API ✏️ | Dungeon Hub"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/dungeon-hub-api.html#webpage",
+    "url": "writerside-documentation/dungeon-hub-api.html",
+    "name": "Dungeon Hub API ✏️ | Dungeon Hub",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Dungeon Hub Help"
+}</script><!-- End Schema.org --></head><body data-id="Dungeon-Hub-API" data-main-title="Dungeon Hub API ✏️" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Dungeon Hub  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Dungeon-Hub-API" id="Dungeon-Hub-API.topic">Dungeon Hub API ✏️</h1><section class="chapter"><h2 id="what-is-the-dungeon-hub-api" data-toc="what-is-the-dungeon-hub-api">What is the Dungeon Hub API</h2><p id="-e6c5zg_5">The Dungeon Hub API hosts all data that is used in the <a href="dungeon-hub-bot.html" id="-e6c5zg_6" data-tooltip="The Dungeon Hub Bot is a Discord bot that provides a variety of features to enhance the user experience on the Dungeon Hub Discord server. Originally, the bot was created to keep track of the amount of services a user has provided for others on the server. Recently, more and more…">Dungeon Hub Bot</a>. <br> The <a href="dungeon-hub-bot.html" id="-e6c5zg_8" data-tooltip="The Dungeon Hub Bot is a Discord bot that provides a variety of features to enhance the user experience on the Dungeon Hub Discord server. Originally, the bot was created to keep track of the amount of services a user has provided for others on the server. Recently, more and more…">Dungeon Hub Bot</a> itself only serves as a client to interact with the API - it does not have any database access and only persists data through the API. A documentation with all endpoints and their usage can be found at <a href="https://api.dungeon-hub.net/" id="-e6c5zg_9" data-external="true" rel="noopener noreferrer" target="_blank">https://api.dungeon-hub.net/</a>.</p></section><section class="chapter"><h2 id="authentication" data-toc="authentication">Authentication</h2><p id="-e6c5zg_10">Most endpoints of the Dungeon Hub API require authentication. <br> The API uses bearer tokens for authentication, meaning an Authorization header containing the JWT token must be attached to the request. <br> The header should look like: <code class="code" id="-e6c5zg_15">Authorization: Bearer &lt;token&gt;</code>. <br> A token can be obtained from the authentication server, which is hosted separately to the API at <a href="https://auth.dungeon-hub.net/" id="-e6c5zg_17" data-external="true" rel="noopener noreferrer" target="_blank">https://auth.dungeon-hub.net/</a>.</p><section class="chapter"><h3 id="logging-in-as-a-user" data-toc="logging-in-as-a-user">Logging in as a user</h3><p id="-e6c5zg_18"><code class="code" id="-e6c5zg_19">Coming soon</code></p></section><section class="chapter"><h3 id="logging-in-as-a-client" data-toc="logging-in-as-a-client">Logging in as a client</h3><aside class="prompt" data-type="warning" data-title="" id="-e6c5zg_20"><p id="-e6c5zg_24">This requires a client to be registered manually. If you're interested in this, please contact <a href="mailto:admin@dungeon-hub.net" id="-e6c5zg_25" data-external="true">the administration</a>.</p></aside><p id="-e6c5zg_21">To log in as a client, you need to send a <code class="code" id="-e6c5zg_26">POST</code> request to <code class="code" id="-e6c5zg_27">https://auth.dungeon-hub.net/realms/dungeon-hub/protocol/openid-connect/token</code>. <br> The request body should be a multipart form containing the following fields:</p><ul class="list _bullet" id="-e6c5zg_22"><li class="list__item" id="-e6c5zg_29"><p><code class="code" id="-e6c5zg_31">client_id</code>: <code class="code" id="-e6c5zg_32">dh-server</code></p></li><li class="list__item" id="-e6c5zg_30"><p><code class="code" id="-e6c5zg_33">grant_type</code>: <code class="code" id="-e6c5zg_34">client_credentials</code></p></li></ul><p id="-e6c5zg_23">As the Authorization header, you should use basic authentication with the client's credentials (client id as username, client secret as password).</p></section></section><section class="chapter"><h2 id="connecting-to-the-api" data-toc="connecting-to-the-api">Connecting to the API</h2><p id="-e6c5zg_35">All API endpoints are reachable under <a href="https://api.dungeon-hub.net/" id="-e6c5zg_37" data-external="true" rel="noopener noreferrer" target="_blank">https://api.dungeon-hub.net/</a>. A simple documentation of all endpoints is available there. <br> To ease the connection to the API, a Kotlin/JVM library containing all models that the API uses in requests and responses, as well as a library to send requests to all possible endpoints is available at <a href="https://github.com/dungeon-hub/dungeon-hub-api" id="-e6c5zg_39" data-external="true" rel="noopener noreferrer" target="_blank">https://github.com/dungeon-hub/dungeon-hub-api</a>.</p><section class="chapter"><h3 id="importing-client" data-toc="importing-client">Importing the client library</h3><div class="tabs" id="-e6c5zg_40" data-anchors="[gradle-groovy-import,gradle-kotlin-import,maven-import]"><div class="tabs__content" data-gtm="tab" id="gradle-kotlin-import" data-title="Gradle (Kotlin)"><p id="-e6c5zg_44">First of all, add a dependency to your <code class="code" id="-e6c5zg_49">gradle/libs.versions.toml</code> file.</p><p id="-e6c5zg_45">This file is used to declare the versions of libraries you use in one central place.</p><div class="code-block" data-lang="toml" data-title="TOML">
+                        [versions]
+                        dungeon-hub-api-client = &quot;0.6.1&quot;
+
+                        [libraries]
+                        dungeon-hub-api-client = {module = &quot;net.dungeon-hub.api:client&quot;, version.ref = &quot;dungeon-hub-api-client&quot; }
+                    </div><p id="-e6c5zg_47">Then, you can simply add the dependency to your <code class="code" id="-e6c5zg_50">build.gradle.kts</code> file.</p><div class="code-block" data-lang="kotlin" data-title="Kotlin">
+                        repositories {
+                            // other repositories
+
+                            mavenCentral()
+                        }
+
+                        dependencies {
+                            // other dependencies
+
+                            implementation(libs.dungeon.hub.api.client)
+                        }
+                    </div></div><div class="tabs__content" data-gtm="tab" id="gradle-groovy-import" data-title="Gradle (Groovy)"><p id="-e6c5zg_51">First of all, add a dependency to your <code class="code" id="-e6c5zg_56">gradle/libs.versions.toml</code> file.</p><p id="-e6c5zg_52">This file is used to declare the versions of libraries you use in one central place.</p><div class="code-block" data-lang="toml" data-title="TOML">
+                        [versions]
+                        dungeon-hub-api-client = &quot;0.6.1&quot;
+
+                        [libraries]
+                        dungeon-hub-api-client = {module = &quot;net.dungeon-hub.api:client&quot;, version.ref = &quot;dungeon-hub-api-client&quot; }
+                    </div><p id="-e6c5zg_54">Then, you can simply add the dependency to your <code class="code" id="-e6c5zg_57">build.gradle</code> file.</p><div class="code-block" data-lang="groovy" data-title="Groovy">
+                        repositories {
+                            // other repositories
+
+                            mavenCentral()
+                        }
+
+                        dependencies {
+                            // other dependencies
+
+                            implementation(libs.dungeon.hub.api.client)
+                        }
+                    </div></div><div class="tabs__content" data-gtm="tab" id="maven-import" data-title="Maven"><p>Please add the following to your `pom.xml`: </p><div class="code-block" data-lang="markup" data-title="XML">
+                        &lt;dependencies&gt;
+                            &lt;dependency&gt;
+                                &lt;groupId&gt;net.dungeon-hub.api&lt;/groupId&gt;
+                                &lt;artifactId&gt;client&lt;/artifactId&gt;
+                                &lt;version&gt;0.6.1&lt;/version&gt;
+                            &lt;/dependency&gt;
+                        &lt;/dependencies&gt;
+                    </div></div></div></section></section><div class="last-modified">27 December 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="user-commands.html" class="navigation-links__prev">User Commands ✏️</a><a href="entities.html" class="navigation-links__next">Entities ✏️</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.25.3-b857/app.js"></script></body></html>
