@@ -1,0 +1,88 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#E8488B"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2025-12-29T00:11:31.909833593"><title>Embed Management ✏️ | Dungeon Hub</title><script type="application/json" id="virtual-toc-data">[{"id":"embed-format","level":0,"title":"Embed Format","anchor":"#embed-format"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.css" rel="stylesheet"><link rel="icon" type="image/x-icon" sizes="16x16" href="images/favicon.ico"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Embed Management ✏️ | Dungeon Hub"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Dungeon Hub Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/embed-management.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Embed Management ✏️ | Dungeon Hub"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/embed-management.html#webpage",
+    "url": "writerside-documentation/embed-management.html",
+    "name": "Embed Management ✏️ | Dungeon Hub",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Dungeon Hub Help"
+}</script><!-- End Schema.org --></head><body data-id="Embed-Management" data-main-title="Embed Management ✏️" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Dungeon-Hub-Bot.md|Dungeon Hub Bot///Features.md|Features"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Dungeon Hub  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Embed-Management" id="Embed-Management.md">Embed Management ✏️</h1><p id="u5wvut_3">Work with Discord embeds directly: read existing embeds, send new ones, and modify embeds on bot messages. Multiple embeds per message are supported (as Discord allows). Use the <a href="embed.html" id="u5wvut_5" data-tooltip="Manage message embeds: read, send, add, and edit embeds via JSON.">/embed</a> command to access these features.</p><section class="chapter"><h2 id="embed-format" data-toc="embed-format">Embed Format</h2><p id="u5wvut_6">Most <a href="embed.html" id="u5wvut_18" data-tooltip="Manage message embeds: read, send, add, and edit embeds via JSON.">/embed</a> sub-commands expect embed data as a JSON string. Provide either a single object (one embed) or a JSON array (multiple embeds). To inspect the exact format, run <a href="embed-get.html" id="u5wvut_19" data-tooltip="Display the embed JSON of a message.">/embed get</a> on a message with an embed.</p><p id="u5wvut_7">Supported input fields when sending/editing:</p><ul class="list _bullet" id="u5wvut_8"><li class="list__item" id="u5wvut_20"><p><code class="code" id="u5wvut_30">title</code>: String</p></li><li class="list__item" id="u5wvut_21"><p><code class="code" id="u5wvut_31">description</code>: String</p></li><li class="list__item" id="u5wvut_22"><p><code class="code" id="u5wvut_32">url</code>: String</p></li><li class="list__item" id="u5wvut_23"><p><code class="code" id="u5wvut_33">timestamp</code>: Unix timestamp in milliseconds (number or numeric string)</p></li><li class="list__item" id="u5wvut_24"><p><code class="code" id="u5wvut_34">color</code>: Hex color with leading <code class="code" id="u5wvut_35">#</code> (for example <code class="code" id="u5wvut_36">#A51770</code>)</p></li><li class="list__item" id="u5wvut_25"><p><code class="code" id="u5wvut_37">footer</code>: Object with <code class="code" id="u5wvut_38">text</code> and optional <code class="code" id="u5wvut_39">icon</code></p></li><li class="list__item" id="u5wvut_26"><p><code class="code" id="u5wvut_40">thumbnail</code>: Object with <code class="code" id="u5wvut_41">url</code></p></li><li class="list__item" id="u5wvut_27"><p><code class="code" id="u5wvut_42">author</code>: Either a string (name) or an object with <code class="code" id="u5wvut_43">name</code>, optional <code class="code" id="u5wvut_44">url</code>, optional <code class="code" id="u5wvut_45">icon</code></p></li><li class="list__item" id="u5wvut_28"><p><code class="code" id="u5wvut_46">fields</code>: Array of objects <code class="code" id="u5wvut_47">{ name, value, inline }</code></p></li><li class="list__item" id="u5wvut_29"><p><code class="code" id="u5wvut_48">image</code>: URL of an image, can be either null or omitted entirely</p></li></ul><p id="u5wvut_9">Notes:</p><ul class="list _bullet" id="u5wvut_10"><li class="list__item" id="u5wvut_49"><p>The <code class="code" id="u5wvut_50">author</code> field accepts either a single string (used as the name) or an object with properties.</p></li></ul><div class="code-collapse" data-lang="json" data-is-expanded="false" data-synopsis="Format">
+{
+  &quot;title&quot;: &quot;title&quot;,
+  &quot;description&quot;: &quot;description&quot;,
+  &quot;url&quot;: &quot;url for title&quot;,
+  &quot;timestamp&quot;: &quot;timestamp in epoch milliseconds&quot;,
+  &quot;color&quot;: &quot;color in hex format, with leading #&quot;,
+  &quot;image&quot;: &quot;example image url&quot;,
+  &quot;footer&quot;: {
+    &quot;text&quot;: &quot;footer text&quot;,
+    &quot;icon&quot;: &quot;icon url&quot;
+  },
+  &quot;thumbnail&quot;: {
+    &quot;url&quot;: &quot;thumbnail url&quot;
+  },
+  &quot;author&quot;: {
+    &quot;name&quot;: &quot;author name&quot;,
+    &quot;url&quot;: &quot;author url&quot;,
+    &quot;icon&quot;: &quot;author icon url&quot;
+  },
+  &quot;fields&quot;: [
+    {
+      &quot;name&quot;: &quot;field name&quot;,
+      &quot;value&quot;: &quot;field value&quot;,
+      &quot;inline&quot;: &quot;boolean, if the field should be inline&quot;
+    }
+  ]
+}
+</div><div class="code-collapse" data-lang="json" data-is-expanded="false" data-synopsis="Example Embed">
+{
+  &quot;title&quot;: &quot;Example Embed&quot;,
+  &quot;description&quot;: &quot;Example embed, just to try it out&quot;,
+  &quot;url&quot;: &quot;https://example.com/&quot;,
+  &quot;timestamp&quot;: 1732920448245,
+  &quot;color&quot;: &quot;#A51770&quot;,
+  &quot;image&quot;: &quot;https://static.dungeon-hub.net/blaze.png&quot;,
+  &quot;footer&quot;: {
+    &quot;text&quot;: &quot;footer text&quot;,
+    &quot;icon&quot;: &quot;https://static.dungeon-hub.net/favicon.gif&quot;
+  },
+  &quot;thumbnail&quot;: {
+    &quot;url&quot;: &quot;https://static.dungeon-hub.net/enderman.png&quot;
+  },
+  &quot;author&quot;: {
+    &quot;name&quot;: &quot;author name&quot;,
+    &quot;url&quot;: &quot;https://example.com/&quot;,
+    &quot;icon&quot;: &quot;https://static.dungeon-hub.net/livid.png&quot;
+  },
+  &quot;fields&quot;: [
+    {
+      &quot;name&quot;: &quot;field name&quot;,
+      &quot;value&quot;: &quot;field value&quot;,
+      &quot;inline&quot;: true
+    },
+    {
+      &quot;name&quot;: &quot;field name 2&quot;,
+      &quot;value&quot;: &quot;field value 2&quot;,
+      &quot;inline&quot;: false
+    }
+  ]
+}
+</div><section class="chapter"><h3 id="cdn-links-and-size-limits" data-toc="cdn-links-and-size-limits">CDN links and size limits</h3><ul class="list _bullet" id="u5wvut_51"><li class="list__item" id="u5wvut_52"><p><a href="embed-get.html" id="u5wvut_54" data-tooltip="Display the embed JSON of a message.">/embed get</a> returns JSON in a code block by default. If the JSON exceeds ~4000 characters or if you select the <code class="code" id="u5wvut_55">cdn</code> output type, the JSON is uploaded and a CDN link is returned instead.</p></li><li class="list__item" id="u5wvut_53"><p><a href="embed-send.html" id="u5wvut_56" data-tooltip="Send one or more embeds from JSON into a channel.">/embed send</a> can accept a CDN link produced by <code class="code" id="u5wvut_57">get</code> or raw JSON.</p></li></ul></section><section class="chapter"><h3 id="url-format" data-toc="url-format">URL format</h3><p id="u5wvut_58">Some fields in the embed can contain a URL. This URL is often a link to an image that should be used, but it can reference any possible url. If any of the URLs are not valid, sending may fail with an error. The URL must contain a valid protocol, meaning it must start with e.g. <code class="code" id="u5wvut_59">http://</code> or <code class="code" id="u5wvut_60">https://</code>.</p></section><section class="chapter"><h3 id="message-link" data-toc="message-link">Message Link</h3><p id="u5wvut_61">The message link is a link to a message in discord, which can be obtained by right-clicking on a message and selecting <code class="code" id="u5wvut_63">Copy Message Link</code>. This link is used to identify the message that should be edited or read from.</p><div class="code-collapse" data-lang="regex" data-is-expanded="false" data-synopsis="Message Link Regex">
+(?x)                             # enable comment mode
+(?i)                             # ignore case
+(?:https?+://)?+                 # 'https://' or 'http://' or ''
+(?:(?:canary|ptb)\\.)?+          # 'canary.' or 'ptb.'
+discord(?:app)?+\\.com/channels/ # 'discord(app).com/channels/'
+(?:(?&lt;server&gt;[0-9]++)|@me)       # '@me' or the server id as named group
+/                                # '/'
+(?&lt;channel&gt;[0-9]++)              # the textchannel id as named group
+/                                # '/'
+(?&lt;message&gt;[0-9]++)              # the message id as named group
+</div></section><section class="chapter"><h3 id="timestamp" data-toc="timestamp">Timestamp</h3><p id="u5wvut_64">The <code class="code" id="u5wvut_65">timestamp</code> field is a unix timestamp in milliseconds. This is used to display a timestamp in the embed. <br> You can convert a date to a timestamp and vice versa by using websites like <a href="https://www.epochconverter.com/" id="u5wvut_67" data-external="true" rel="noopener noreferrer">this</a>. <br> Please make sure that the timestamp is in milliseconds, as the bot will not convert it for you, resulting in incorrect dates being shown.</p></section><section class="chapter"><h3 id="color" data-toc="color">Color</h3><p id="u5wvut_69">The <code class="code" id="u5wvut_70">color</code> field is a hex color code, with a leading <code class="code" id="u5wvut_71">#</code>. This color is used to color the left bar of the embed. <br> You can use websites like <a href="https://www.w3schools.com/colors/colors_picker.asp" id="u5wvut_73" data-external="true" rel="noopener noreferrer">this</a> or <a href="https://www.color-hex.com/" id="u5wvut_74" data-external="true" rel="noopener noreferrer">this</a> to find a color you like.</p></section></section><div class="last-modified">Last modified: 29 December 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="features.html" class="navigation-links__prev">Features</a><a href="role-management.html" class="navigation-links__next">Role Management ✏️</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b518/app.js"></script></body></html>
