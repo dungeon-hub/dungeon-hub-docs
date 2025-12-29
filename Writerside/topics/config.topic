@@ -3,7 +3,37 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/config ✏️" id="config">
+       title="/config" id="config">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Edits the config for the server.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Administrator</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Read or modify server-level settings. Properties are typed (string, number, boolean, channel, category, role) and can be reset to <code>null</code>.
+            See <a href="Server-Property.md"/> for available properties and meanings.
+        </p>
+    </chapter>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="config-get.topic"/>: Show the current value for a property.</li>
+            <li><a href="config-set.topic"/>: <code>set string</code>, <code>set number</code>, <code>set boolean</code>, <code>set channel</code>, <code>set category</code>, <code>set role</code>, as well as <code>set null</code> (which resets a property to <code>null</code>)</li>
+        </list>
+    </chapter>
 </topic>

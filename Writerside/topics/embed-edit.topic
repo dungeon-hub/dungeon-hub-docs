@@ -3,7 +3,77 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/embed edit ✏️" id="embed-edit">
+       title="/embed edit" id="embed-edit">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Edit a specific embed on a bot message.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Replaces one embed on a message sent by this bot. Select the embed by its 0-based index and provide the new embed JSON.
+        </p>
+        <p>
+            The target message must be authored by the bot and must contain at least one embed.
+        </p>
+        <p>See <a href="Embed-Management.md"/> for the supported JSON fields.</p>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Before" id="ex-edit-before">
+            <p>Target message (bot-authored) with an existing embed at index 0.</p>
+            <img alt="embed-edit-before.png" src="embed-edit-before.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+
+        <chapter title="Command" id="ex-edit-command">
+            <code-block lang="bash">/embed edit link: https://discord.com/channels/693263712626278553/693441386044850256/1452471560135774298 count: 0 embed: {"title":"Pinned Message","description":"This message is now pinned to the top 📌","color":"#FAA61A","author":{"name":"Dungeon Hub Staff Team","icon":"https://static.dungeon-hub.net/favicon.gif"}}</code-block>
+        </chapter>
+
+        <chapter title="After" id="ex-edit-after">
+            <p>Embed at index 0 is replaced with the new data.</p>
+            <img alt="embed-edit-after.png" src="embed-edit-after.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>link</code></td>
+                <td>String</td>
+                <td>Link to the target bot message.</td>
+                <td>:x: No</td>
+                <td>Use “Copy Message Link” in Discord.</td>
+            </tr>
+            <tr>
+                <td><code>embed</code></td>
+                <td>String</td>
+                <td>Replacement embed JSON.</td>
+                <td>:x: No</td>
+                <td>Single embed object.</td>
+            </tr>
+            <tr>
+                <td><code>count</code></td>
+                <td>Integer</td>
+                <td>Which embed to edit (0-based).</td>
+                <td>:white_check_mark: Yes</td>
+                <td>Defaults to <code>0</code>.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>Invalid JSON returns an error.</li>
+            <li>Messages not authored by the bot cannot be modified.</li>
+        </list>
+    </chapter>
 </topic>
