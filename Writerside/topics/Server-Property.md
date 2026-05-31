@@ -40,9 +40,12 @@ The following values can be set for the server property:
 - `STRIKES_LOGS_CHANNEL`: The channel where strike logs are sent to, meaning messages when a warning with [type
   `Strike`](Warning-Type.md) is added or edited.
 - `LOG_APPROVING_CHANNEL`: The channel where carry logs are sent to for staff approval.
-- `TRANSCRIPTS_CHANNEL`: The channel where transcripts are sent to. If the server uses Ticket Tool, please make sure
-  that transcripts of all service tickets are sent to this channel. The bot will only listen to ticket transcripts in
-  this channel, other channels will be ignored.
+- `TRANSCRIPTS_CHANNEL`: The channel where ticket transcripts are sent to. This setting applies to the Dungeon Hub
+  ticket system when ticket panels have their `closeTranscriptTarget` or `deleteTranscriptTarget` set to
+  `TranscriptChannel` or `Both`. Transcripts capture the complete message history of a ticket in HTML format and are
+  uploaded to a CDN. If the server also uses Ticket Tool (an external bot), please ensure that transcripts from Ticket
+  Tool are also sent to this channel, as the bot will only listen to ticket transcripts in this designated channel.
+  See [Ticket System](Ticket-System.md) for more details on transcript configuration.
 - `SERVICE_TEAM_RULES_CHANNEL`: Currently unused.
 - `CNT_MESSAGES_CHANNEL`: The channel where crafts and transfer messages are sent to.
 - `CNT_INFORMATION_CHANNEL`: The channel that contains information about the crafts and transfer system. This is used to

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/ticket close ✏️" id="ticket-close">
+
+    <tldr>
+        <p>
+            <format style="italic">Close the current ticket channel.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code> (ticket creator or support staff)
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description" collapsible="true">
+        <p>
+            Closes the current ticket, transitioning it from the <code>Open</code> state to the <code>Closed</code> state.
+            This command must be run within a ticket channel.
+        </p>
+        <p>
+            When a ticket is closed:
+        </p>
+        <list>
+            <li>The ticket creator loses access to the channel (VIEW_CHANNEL permission removed)</li>
+            <li>Support staff and additional roles maintain access</li>
+            <li>The channel is moved to the configured closed category (if <code>closedCategories</code> is set)</li>
+            <li>The channel is renamed according to <code>closedChannelName</code> template (if configured)</li>
+            <li>A transcript is generated and delivered based on <code>closeTranscriptTarget</code> setting</li>
+            <li>An "Open" button is added to the ticket, allowing support staff to reopen it if needed</li>
+        </list>
+        <p>
+            If the ticket panel has <code>closeConfirmation</code> enabled, you will be prompted to confirm the closure before it takes effect.
+        </p>
+        <p>
+            If the ticket panel isn't <code>closeable</code>, the ticket will be deleted instead.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <p>This command takes no arguments. It operates on the current channel, which must be a ticket channel.</p>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>
+                Only the ticket creator or members with support/additional roles (as well as administrators) can close a ticket.
+            </li>
+            <li>
+                Closed tickets can be reopened by support staff using the "Open" button that appears in the channel.
+            </li>
+            <li>
+                Transcript delivery depends on the <code>closeTranscriptTarget</code> configuration:
+                <list>
+                    <li><code>None</code> - No transcript generated</li>
+                    <li><code>User</code> - Transcript sent to the ticket creator via DM</li>
+                    <li><code>TranscriptChannel</code> - Transcript posted in the configured transcript channel</li>
+                    <li><code>Both</code> - Transcript sent to both user and channel</li>
+                </list>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="Ticket-System.md">Ticket System Overview</a></li>
+            <li><a href="Ticket-Panel-Configuration.md"/></li>
+            <li><a href="ticket-add.topic">/ticket add</a> - Add a user to a ticket</li>
+        </list>
+    </chapter>
+
+</topic>

@@ -25,7 +25,13 @@
 
     <chapter title="Description" id="description">
         <p>
-            Use this within a carry ticket channel. The bot validates the ticket, prompts for confirmation, and records the log, giving you score.
+            Use this command within a carry ticket channel to log completed carries. The bot validates the ticket,
+            prompts for confirmation, and records the log, awarding you score based on the carry tier and difficulty.
+        </p>
+        <p>
+            This command is only available in ticket channels that have a <code>relatedCarryTier</code> configured.
+            The ticket panel must be linked to a carry tier for the log command to function. See
+            <a href="Ticket-Panel-Configuration.md"/> for details on setting up carry integration.
         </p>
     </chapter>
 
@@ -62,12 +68,28 @@
         </chapter>
     </chapter>
 
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>
+                The ticket channel must be associated with a ticket panel that has a <code>relatedCarryTier</code> configured.
+            </li>
+            <li>
+                The carry difficulty must match one of the difficulties configured for the related carry tier.
+            </li>
+            <li>
+                After logging, your score is updated and can be viewed with <a href="score.topic">/score</a>.
+            </li>
+        </list>
+    </chapter>
+
     <chapter title="See Also" id="see-also">
         <list>
-            <li><a href="score.topic"/>: your score increases from successful logs.</li>
-            <li><a href="leaderboard.topic"/>: see how logs affect rankings.</li>
-            <li><a href="manage-score.topic"/>: admins can resolve edge cases manually.</li>
-            <li><a href="Carry-Difficulty.md"/>: the Carry Difficulty you enter.</li>
+            <li><a href="Ticket-System.md">Ticket System</a>: overview of how carry tickets work</li>
+            <li><a href="Ticket-Panel-Configuration.md"/>: configure <code>relatedCarryTier</code> and <code>relatedCarryDifficulty</code></li>
+            <li><a href="score.topic"/>: your score increases from successful logs</li>
+            <li><a href="leaderboard.topic"/>: see how logs affect rankings</li>
+            <li><a href="manage-score.topic"/>: admins can resolve edge cases manually</li>
+            <li><a href="Carry-Difficulty.md"/>: the Carry Difficulty you enter</li>
         </list>
     </chapter>
 
