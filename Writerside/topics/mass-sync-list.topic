@@ -13,6 +13,11 @@
         <p><br/></p>
 
         <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
             <format style="bold">Default permission required:</format>
             <code>Administrator</code>
         </p>

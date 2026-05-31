@@ -7,7 +7,7 @@
 
     <tldr>
         <p>
-            <format style="italic">Use this to manage the score of service team members.</format>
+            <format style="italic">Manually adjust the score of service team members for carry types.</format>
         </p>
 
         <p><br/></p>
@@ -19,15 +19,49 @@
 
         <p>
             <format style="bold">Default permission required:</format>
-            <code>Manage messages</code>
+            <code>Manage Messages</code>
         </p>
     </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Score tracks carry service contributions by service team members. It is normally awarded automatically via the
+            <a href="log.topic">/log</a> command when carries are completed. This command allows administrators to manually
+            adjust scores for edge cases, corrections, or special circumstances.
+        </p>
+        <p>
+            Score adjustments affect <a href="leaderboard.topic">leaderboards</a> and can be viewed with <a href="score.topic">/score</a>.
+        </p>
+    </chapter>
+
+    <chapter title="Permissions" id="permissions">
+        <p>
+            The <code>add</code> and <code>remove</code> sub-commands require the <code>Manage Messages</code> Discord permission.
+            If the <code>SCORE_MANAGEMENT_ROLE</code> <a href="Server-Property.md">server property</a> is configured, users
+            must also have that role to use these commands.
+        </p>
+        <p>
+            The <code>reset</code> sub-command requires the <code>Administrator</code> Discord permission due to its server-wide impact.
+        </p>
+        <p>
+            Server administrators can override these default permission requirements using Discord's command permission settings.
+        </p>
+    </chapter>
 
     <chapter title="Sub-Commands" id="sub-commands">
         <list>
             <li><a href="manage-score-add.topic"/>: Give score to a service team member.</li>
             <li><a href="manage-score-remove.topic"/>: Remove score from a service team member.</li>
-            <li><a href="manage-score-reset.topic"/>: Reset the scores for a given carry type.</li>
+            <li><a href="manage-score-reset.topic"/>: Reset all scores for a given carry type.</li>
+        </list>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="log.topic">/log</a>: Normal way to earn score by logging carries</li>
+            <li><a href="score.topic">/score</a>: View a user's current score</li>
+            <li><a href="leaderboard.topic">/leaderboard</a>: View score rankings</li>
+            <li><a href="Server-Property.md">Server Properties</a>: Configure <code>SCORE_MANAGEMENT_ROLE</code> and <code>SCORE_LOGS_CHANNEL</code></li>
         </list>
     </chapter>
 </topic>

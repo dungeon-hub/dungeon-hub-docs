@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/mass-sync ✏️" id="mass-sync">
+       title="/mass-sync" id="mass-sync">
 
     <tldr>
         <p>
@@ -26,14 +26,27 @@
     <chapter title="Description" id="description">
         <p>
             This command allows you to queue many users for role/nickname syncing. This queue is server-based, where one
-            user is synced every 15 seconds.
+            user is synced every 15 seconds to avoid Discord rate limits.
+        </p>
+        <p>
+            Common use cases for mass-sync include:
+        </p>
+        <list>
+            <li>After adding or modifying <a href="Role-Management.md">role requirements</a>, to apply the new rules to all members</li>
+            <li>To update outdated stats (Catacombs level, SkyBlock level, etc.) in nicknames and roles when users have progressed in-game but haven't manually run <a href="sync.topic">/sync</a></li>
+            <li>After updating guild membership on Hypixel, to sync guild-based roles</li>
+            <li>To refresh all nicknames and roles after configuration changes</li>
+        </list>
+        <p>
+            Users must have a <a href="link.topic">linked Minecraft account</a> for syncing to apply game-based roles and
+            requirements. Unlinked users will only have their basic Discord roles updated.
         </p>
     </chapter>
 
     <chapter title="Sub-Commands" id="sub-commands">
         <list>
-            <li><code>role</code>: Add members of a role (or @everyone) to the sync queue.</li>
-            <li><code>guild</code>: Add members of a Hypixel guild to the sync queue.</li>
+            <li><a href="mass-sync-role.topic"/>: Add members of a role (or @everyone) to the sync queue.</li>
+            <li><a href="mass-sync-guild.topic"/>: Add members of a Hypixel guild to the sync queue.</li>
             <li><a href="mass-sync-list.topic"/>: Show number of users currently queued.</li>
             <li><a href="mass-sync-clear.topic"/>: Clear the current queue.</li>
         </list>

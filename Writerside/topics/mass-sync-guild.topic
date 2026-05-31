@@ -3,11 +3,11 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/manage-score reset ✏️" id="manage-score-reset">
+       title="/mass-sync guild ✏️" id="mass-sync-guild">
 
     <tldr>
         <p>
-            <format style="italic">Reset default and/or event score for a carry type.</format>
+            <format style="italic">Queue a Hypixel guild’s members for syncing.</format>
         </p>
 
         <p><br/></p>
@@ -33,31 +33,19 @@
                 <td>Additional</td>
             </tr>
             <tr>
-                <td><code>carry-type</code></td>
-                <td>Autocompleted String</td>
-                <td>Identifier of the carry type to reset.</td>
+                <td><code>guild</code></td>
+                <td>String</td>
+                <td>Hypixel guild name.</td>
                 <td>:x: No</td>
-                <td>Max length: 30</td>
-            </tr>
-            <tr>
-                <td><code>reset-type</code></td>
-                <td>Enumeration</td>
-                <td>Choose which score to reset (Default, Event, Both).</td>
-                <td>:x: No</td>
-                <td>—</td>
+                <td>Exact match required.</td>
             </tr>
         </table>
     </chapter>
 
     <chapter title="Examples" id="examples" collapsible="true">
-        <code-block lang="bash">/manage-score reset carry-type: f7 reset-type: Both</code-block>
-        <img alt="manage-score-reset.png" src="manage-score-reset.png" width="325" style="inline" border-effect="rounded"/>
-    </chapter>
-
-    <chapter title="Notes" id="notes" collapsible="true">
-        <list>
-            <li>Displays counts of users whose scores were reset.</li>
-        </list>
+        <code-block lang="bash">/mass-sync guild guild: DungeonHub</code-block>
+        <img alt="mass-sync-guild.png" src="mass-sync-guild.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 
 </topic>
+

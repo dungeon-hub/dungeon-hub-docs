@@ -49,7 +49,9 @@
             </toc-element>
             <toc-element topic="mass-sync.topic">
                 <toc-element topic="mass-sync-clear.topic"/>
+                <toc-element topic="mass-sync-guild.topic"/>
                 <toc-element topic="mass-sync-list.topic"/>
+                <toc-element topic="mass-sync-role.topic"/>
             </toc-element>
             <toc-element topic="player.topic"/>
             <toc-element topic="role.topic">
