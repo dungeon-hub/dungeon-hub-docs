@@ -48,7 +48,7 @@
             <li><a href="link.topic"/>: link your Minecraft account.</li>
             <li><a href="unlink.topic"/>: remove your link.</li>
             <li><a href="force-sync.topic"/> and <a href="mass-sync.topic"/>: other ways to refresh roles after linking.</li>
-            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
+            <li><a href="Verification.md"/>: the verification feature is described in more detail here.</li>
         </list>
     </chapter>
 </topic>

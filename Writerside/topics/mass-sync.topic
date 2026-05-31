@@ -23,7 +23,7 @@
         </p>
     </tldr>
 
-    <chapter title="Descripotion" id="description">
+    <chapter title="Description" id="description">
         <p>
             This command allows you to queue many users for role/nickname syncing. This queue is server-based, where one
             user is synced every 15 seconds.

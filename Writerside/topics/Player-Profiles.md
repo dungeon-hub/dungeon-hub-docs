@@ -12,5 +12,6 @@ The bot can display rich player profiles based on Hypixel data using the [dungeo
 Use [](lookup.topic) to check whether a player (IGN) or Discord user is flagged across supported services. The profile and lookup complement each other: the profile shows in-game context, the lookup focuses on risk signals.
 
 ## See also
+
 - [](lookup.topic)
 - [](player.topic)

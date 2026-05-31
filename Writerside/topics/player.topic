@@ -41,7 +41,7 @@
             <tr>
                 <td><code>ign</code></td>
                 <td>String</td>
-                <td>Minecraft Ingame-Name to show.</td>
+                <td>Minecraft in-game name (IGN) to show.</td>
                 <td>:x: No</td>
                 <td>Min length: 2</td>
             </tr>
