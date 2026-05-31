@@ -57,7 +57,7 @@
     </chapter>
 
     <chapter title="Examples" id="examples" collapsible="true">
-        <code-block lang="bash">/manage-score remove user: @User carry-type: f7 amount: 10</code-block>
+        <code-block lang="bash">/manage-score remove user: @User carry-type: mm amount: 14</code-block>
         <img alt="manage-score-remove.png" src="manage-score-remove.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 

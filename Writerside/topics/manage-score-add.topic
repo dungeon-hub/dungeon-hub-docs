@@ -57,7 +57,7 @@
     </chapter>
 
     <chapter title="Examples" id="examples" collapsible="true">
-        <code-block lang="bash">/manage-score add user: @User carry-type: f7 amount: 25</code-block>
+        <code-block lang="bash">/manage-score add user: @User carry-type: slayer amount: 60</code-block>
         <img alt="manage-score-add.png" src="manage-score-add.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 

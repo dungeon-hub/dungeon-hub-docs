@@ -43,7 +43,7 @@
     </chapter>
 
     <chapter title="Examples" id="examples" collapsible="true">
-        <code-block lang="bash">/mass-sync role role: @Verified</code-block>
+        <code-block lang="bash">/mass-sync role role: @Guild Member</code-block>
         <img alt="mass-sync-role.png" src="mass-sync-role.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 

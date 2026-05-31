@@ -50,7 +50,7 @@
     </chapter>
 
     <chapter title="Examples" id="examples" collapsible="true">
-        <code-block lang="bash">/manage-score reset carry-type: f7 reset-type: Both</code-block>
+        <code-block lang="bash">/manage-score reset carry-type: kuudra reset-type: Both</code-block>
         <img alt="manage-score-reset.png" src="manage-score-reset.png" width="325" style="inline" border-effect="rounded"/>
     </chapter>
 
