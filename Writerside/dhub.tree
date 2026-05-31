@@ -72,6 +72,10 @@
                 <toc-element topic="send-cnt-message.topic"/>
             </toc-element>
             <toc-element topic="sync.topic"/>
+            <toc-element topic="ticket.topic">
+                <toc-element topic="ticket-add.topic"/>
+                <toc-element topic="ticket-close.topic"/>
+            </toc-element>
             <toc-element topic="unlink.topic"/>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>
