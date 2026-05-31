@@ -3,18 +3,18 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/leaderboard" id="leaderboard">
+       title="/lookup" id="lookup">
 
     <tldr>
         <p>
-            <format style="italic">Shows you a certain leaderboard.</format>
+            <format style="italic">Check if a user or IGN is flagged.</format>
         </p>
 
         <p><br/></p>
 
         <p>
             <format style="bold">Allowed in DMs:</format>
-            :x: No
+            :white_check_mark: Yes
         </p>
 
         <p>
@@ -25,15 +25,16 @@
 
     <chapter title="Sub-Commands" id="sub-commands">
         <list>
-            <li><a href="leaderboard-reputation.topic"/>: Show reputation leaderboard.</li>
-            <li><a href="leaderboard-score.topic"/>: Show score leaderboard; optionally filter by carry type and score type.</li>
+            <li><a href="lookup-player.topic"/>: Check a Minecraft IGN.</li>
+            <li><a href="lookup-user.topic"/>: Check a Discord user.</li>
+            <li><a href="lookup-appeal.topic"/>: Show appeal links and guidance.</li>
         </list>
     </chapter>
 
     <chapter title="See Also" id="see-also">
         <list>
-            <li><a href="score.topic"/>: personal score view used in buttons.</li>
-            <li><a href="manage-score.topic"/>: admins can adjust scores when needed.</li>
+            <li><a href="player.topic"/>: broader player info includes a flag summary.</li>
         </list>
     </chapter>
+
 </topic>

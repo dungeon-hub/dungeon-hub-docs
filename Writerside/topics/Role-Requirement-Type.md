@@ -43,3 +43,12 @@ This is checked every time the users roles are synced.
 - Highest Crit Damage
 - Bingo Rank
 - Total Bingo Points
+- Reputation
+- Score Leaderboard Rank
+    - The extra data can be set to two different values - separated with a semicolon or not:
+    - If you simply supply the extra data, it must be equal to a [](Score-Type.md), meaning `Default`, `Alltime` or
+      `Event`.
+    - You can also supply a Carry Type identifier, which will be simply appended to the end of the score type using a
+      semicolon, so for example `Event;f7` will return the score leaderboard rank for the event score type with Floor 7
+      carry type.
+- Reputation Leaderboard Rank

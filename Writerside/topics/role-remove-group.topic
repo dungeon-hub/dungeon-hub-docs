@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/role remove-group" id="role-remove-group">
+
+    <tldr>
+        <p>
+            <format style="italic">Remove an entire role group from a user.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>Target member.</td>
+                <td>:x: No</td>
+            </tr>
+            <tr>
+                <td><code>role-group</code></td>
+                <td>Role</td>
+                <td>Role group to remove.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/role remove-group user: @user role-group: @Dungeon Carrier</code-block>
+        <img alt="role-remove-group.png" src="role-remove-group.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="Role-Management.md#role-groups"/></li>
+            <li><a href="Role-Group.md"/></li>
+        </list>
+    </chapter>
+
+</topic>

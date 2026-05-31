@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/force-sync ✏️" id="force-sync">
+
+    <tldr>
+        <p>
+            <format style="italic">Forces the update of the users roles and nickname.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage Nicknames</code>, <code>Manage Roles</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Recalculates and applies the correct roles and nickname for the selected user. If the user is not linked, only roles are synced.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>The target user.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Force sync roles and nickname" id="ex-force-sync">
+            <code-block lang="bash">/force-sync user: @User</code-block>
+            <img alt="force-sync.png" src="force-sync.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="link.topic"/> and <a href="unlink.topic"/>: linking affects role assignment.</li>
+            <li><a href="sync.topic"/>: this command effectively gets executed for another user if
+                <code>/force-sync</code> is executed.
+            </li>
+            <li><a href="mass-sync.topic"/>: queue large updates instead.</li>
+            <li><a href="Verification.md"/>: the verification feature is described closer here.</li>
+        </list>
+    </chapter>
+
+</topic>

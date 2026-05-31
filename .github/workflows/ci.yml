@@ -13,7 +13,7 @@ on:
 
 env:
   ARTIFACT: "webHelpDHUB2-all.zip"
-  DOCKER_VERSION: "243.21565"
+  DOCKER_VERSION: "2025.11.8530"
   INSTANCE: "Writerside/dhub"
 
 jobs:

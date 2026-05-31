@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/lookup player" id="lookup-player">
+
+    <tldr>
+        <p>
+            <format style="italic">Check if a Minecraft IGN is flagged.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>ign</code></td>
+                <td>String</td>
+                <td>Minecraft Ingame-Name to check.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/lookup player ign: LievinC</code-block>
+        <img alt="lookup-player.png" src="lookup-player.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+</topic>
+

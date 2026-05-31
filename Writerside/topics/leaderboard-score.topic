@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/leaderboard score" id="leaderboard-score">
+
+    <tldr>
+        <p>
+            <format style="italic">Shows you the score leaderboard.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>carry-type</code></td>
+                <td>Autocompleted String</td>
+                <td>Filter leaderboard by carry type.</td>
+                <td>:white_check_mark: Yes</td>
+                <td>Max length: 30</td>
+            </tr>
+            <tr>
+                <td><code>score-type</code></td>
+                <td>Enumeration</td>
+                <td>Select the score type.</td>
+                <td>:white_check_mark: Yes</td>
+                <td>If none is supplied, <code>Default</code> is used.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Total Leaderboard" id="ex-lb-score-total">
+            <code-block lang="bash">/leaderboard score</code-block>
+            <img alt="leaderboard-score-total.png" src="leaderboard-score-total.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+        <chapter title="Leaderboard by Carry Type" id="ex-lb-score-carry">
+            <code-block lang="bash">/leaderboard score carry-type: dungeons</code-block>
+            <img alt="leaderboard-score-carry.png" src="leaderboard-score-carry.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+</topic>
+

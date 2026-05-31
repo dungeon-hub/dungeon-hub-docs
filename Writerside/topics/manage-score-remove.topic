@@ -5,5 +5,81 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="/manage-score remove ✏️" id="manage-score-remove">
 
-    <code>Coming soon</code>
+    <tldr>
+        <p>
+            <format style="italic">Remove score from a user for a specific carry type.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Manage Messages</code>
+        </p>
+    </tldr>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>Member whose score to modify.</td>
+                <td>:x: No</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td><code>carry-type</code></td>
+                <td>Autocompleted String</td>
+                <td>Identifier of the carry type.</td>
+                <td>:x: No</td>
+                <td>Max length: 30</td>
+            </tr>
+            <tr>
+                <td><code>amount</code></td>
+                <td>Integer</td>
+                <td>Score amount to remove.</td>
+                <td>:x: No</td>
+                <td>Min: 0, Max: 10000</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/manage-score remove user: @User carry-type: mm amount: 14</code-block>
+        <img alt="manage-score-remove.png" src="manage-score-remove.png" width="325" style="inline" border-effect="rounded"/>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>When configured, a log is posted to the <code>SCORE_LOGS_CHANNEL</code>.</li>
+            <li>Relevant static leaderboard messages are updated automatically.</li>
+            <li>The carry type must exist and be configured on your server.</li>
+            <li>Score is typically awarded automatically via <a href="log.topic">/log</a>; use this command for manual adjustments only.</li>
+            <li>
+                If the <code>SCORE_MANAGEMENT_ROLE</code> <a href="Server-Property.md">server property</a> is configured, users
+                must have that role in addition to the <code>Manage Messages</code> permission to use this command.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="manage-score.topic">/manage-score</a>: Overview and permission details</li>
+            <li><a href="log.topic">/log</a>: Automatic score logging</li>
+            <li><a href="score.topic">/score</a>: View current scores</li>
+        </list>
+    </chapter>
+
 </topic>

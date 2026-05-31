@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/log" id="log">
+
+    <tldr>
+        <p>
+            <format style="italic">Log a carry inside a carry ticket.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Use this within a carry ticket channel. The bot validates the ticket, prompts for confirmation, and records the log, giving you score.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>amount</code></td>
+                <td>Integer</td>
+                <td>Number of carries to log.</td>
+                <td>:x: No</td>
+                <td>Min: 1, Max: 200</td>
+            </tr>
+            <tr>
+                <td><code>carry-difficulty</code></td>
+                <td>Autocompleted String</td>
+                <td>Difficulty identifier of the carry.</td>
+                <td>:x: No</td>
+                <td> </td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Log a carry" id="ex-log">
+            <code-block lang="bash">/log amount: 3 carry-difficulty: S</code-block>
+            <img alt="log-confirm.png" src="log-confirm.png" width="325" style="inline" border-effect="rounded"/>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="score.topic"/>: your score increases from successful logs.</li>
+            <li><a href="leaderboard.topic"/>: see how logs affect rankings.</li>
+            <li><a href="manage-score.topic"/>: admins can resolve edge cases manually.</li>
+            <li><a href="Carry-Difficulty.md"/>: the Carry Difficulty you enter.</li>
+        </list>
+    </chapter>
+
+</topic>

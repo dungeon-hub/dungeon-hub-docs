@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/send" id="send">
+
+    <tldr>
+        <p>
+            <format style="italic">Post helper messages (linking, CNT) into a channel.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="send-cnt-message.topic"/>: Send the CNT request panel.</li>
+            <li><a href="send-link-message.topic"/>: Send a linking helper message.</li>
+        </list>
+    </chapter>
+</topic>
