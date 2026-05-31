@@ -13,6 +13,10 @@
             <toc-element topic="Player-Profiles.md"/>
             <toc-element topic="Role-Management.md"/>
             <toc-element topic="Server-Property.md"/>
+            <toc-element topic="Ticket-System.md">
+                <toc-element topic="Ticket-Panel-Configuration.md"/>
+                <toc-element topic="Ticket-Placeholders.md"/>
+            </toc-element>
             <toc-element topic="Verification.md"/>
             <toc-element topic="Warnings.md"/>
         </toc-element>
