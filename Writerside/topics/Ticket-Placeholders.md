@@ -24,6 +24,7 @@ Placeholders for the user who **created** the ticket.
 | `{user.displayName}` | Server-specific nickname or global name | `Staff - Tech`          |
 
 **Example usage:**
+
 ```
 Welcome, {user.mention}! Your ticket ID is {ticket.id}.
 ```
@@ -44,6 +45,7 @@ Placeholders for the ticket creator's linked Minecraft account and game statisti
 > {style="note"}
 
 **Example usage:**
+
 ```
 Player: {user.minecraft.name} (Catacombs {user.catacombs.level})
 ```
@@ -80,10 +82,11 @@ Placeholders for user responses to form questions. The number corresponds to the
 | `{ticket.form.4}` | Response to the 4th form question | `Additional notes here`        |
 | `{ticket.form.5}` | Response to the 5th form question | `Yes`                          |
 
-> Form questions are limited to 5 per ticket panel. If a question is not answered or doesn't exist, the placeholder resolves to an empty string.
+> Form questions are limited to 5 per ticket panel. If a question is not answered or doesn't exist, the placeholder resolves to "unknown".
 > {style="note"}
 
 **Example usage:**
+
 ```
 carry-{ticket.form.2}-runs
 ```
@@ -103,6 +106,7 @@ Placeholders for the user who **performed an action** on the ticket (e.g., close
 | `{interactionUser.displayName}`     | Server-specific nickname or global name | `Support Lead`          |
 
 **Example usage:**
+
 ```
 Ticket closed by {interactionUser.mention}
 ```
@@ -121,6 +125,7 @@ Placeholders for the support staff member who claimed the ticket. These are only
 > {style="note"}
 
 **Example usage:**
+
 ```
 {panel.name}-{ticket.count}-{claimer.mention}
 ```
@@ -140,6 +145,7 @@ Placeholders for carry tier and difficulty information. These require the ticket
 > {style="note"}
 
 **Example usage:**
+
 ```
 {carry-tier.name}-{carry-difficulty.name}-{ticket.count}
 ```
@@ -156,6 +162,7 @@ Placeholders for transcript information. These are primarily used in `userTransc
 | `{transcript.url}` | CDN URL of the generated transcript | `https://cdn.dungeon-hub.net/some-uuid-here.html` |
 
 **Example usage:**
+
 ```json
 ["Your ticket has been closed. View the transcript: {transcript.url}"]
 ```
@@ -194,12 +201,14 @@ The best way to test placeholder behavior is to:
 ## Common Use Cases
 
 ### Example 1: Personalized Channel Name
+
 ```
 {panel.name}-{user.minecraft.name}-{ticket.count}
 ```
 Output: `support-technoblade-42`
 
 ### Example 2: Carry Ticket with Difficulty
+
 ```
 {carry-tier.name}-{carry-difficulty.name}-{ticket.form.1}runs
 ```
@@ -207,6 +216,7 @@ If form question 1 asks "How many runs?" and the user answers "5":\
 Output: `floor-7-completion-5runs`
 
 ### Example 3: Welcome Message with Context
+
 ```json
 {
   "content": "Welcome, {user.mention}!\n\n**Minecraft Account:** {user.minecraft.name}\n**Catacombs Level:** {user.catacombs.level}\n**Ticket ID:** {ticket.id}\n\nA staff member will assist you shortly."
@@ -214,8 +224,16 @@ Output: `floor-7-completion-5runs`
 ```
 
 ### Example 4: Transcript DM
+
 ```json
-["Thank you for contacting support, {user.globalName}! Your ticket has been closed.\n\nView the full conversation here: {transcript.url}"]
+[{
+  "title": "Support Ticket Closed",
+  "description": "Thank you for contacting {panel.name}, {user.globalName}.\n\nView the full conversation here: {transcript.url}",
+  "color": 3066993,
+  "footer": {
+    "text": "Ticket #{ticket.count}"
+  }
+}]
 ```
 
 ---
