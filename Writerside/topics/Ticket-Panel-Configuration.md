@@ -55,6 +55,7 @@ This page provides a comprehensive reference for all ticket panel configuration 
 **Type:** JSON String (optional)\
 **Description:** The message sent to the ticket channel immediately after creation. Supports Discord message JSON format with `content`, `embeds`, and `buttons` fields. Placeholders are supported (see [Ticket Placeholders](Ticket-Placeholders.md)).\
 **Default:**
+
 ```json
 {
   "content": "Welcome, {user.mention}!\nPlease describe your {panel.name} request below further."
@@ -62,6 +63,7 @@ This page provides a comprehensive reference for all ticket panel configuration 
 ```
 
 **Example with embed:**
+
 ```json
 {
   "content": "Welcome, {user.mention}!",
@@ -119,6 +121,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
 **Description:** Controls where transcripts are sent when a ticket is closed.
 
 **Valid values:**
+
 - `None` - No transcript generated on close
 - `User` - Transcript sent via DM to the ticket creator only
 - `TranscriptChannel` - Transcript posted in `transcriptChannel` only
@@ -130,6 +133,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
 **Description:** Controls where transcripts are sent when a ticket is deleted.
 
 **Valid values:**
+
 - `None` - No transcript generated on delete
 - `User` - Transcript sent via DM to the ticket creator only
 - `TranscriptChannel` - Transcript posted in `transcriptChannel` only
@@ -142,6 +146,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
 **Default:** `["transcript"]`
 
 **Format options:**
+
 1. **Array of predefined embed types** (strings):
    - `"transcript"` - Uses the built-in transcript embed with ticket information
    
@@ -153,8 +158,8 @@ Transcripts capture the complete message history of a ticket in HTML format and 
      "color": 3447003
    }
    ```
-
 3. **Array of embed objects**:
+
    ```json
    [
      {
@@ -171,6 +176,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
    ```
 
 **Examples:**
+
 ```json
 ["transcript"]
 ```
