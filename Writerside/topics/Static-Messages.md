@@ -4,7 +4,7 @@ Static messages are bot-managed embeds that can be created and refreshed to keep
 
 ## Creating
 
-Create a static message with [](/static-message-create). Choose the static message type and, optionally, a target text channel. \
+Create a static message with [](static-message-create.topic). Choose the static message type and, optionally, a target text channel. \
 The bot will post the message and return a link to it.
 
 Available types are score, total, and reputation leaderboards, ticket panels, and price messages. Score leaderboards
@@ -26,7 +26,7 @@ To refresh a static message, right-click it and select `Apps | Static Message In
 > {style="note"}
 
 See also
-- [](/static-message) for all management commands.
-- [](/leaderboard) to view a temporary leaderboard response.
-- [](/send) for other helper messages.
+- [](static-message.topic) for all management commands.
+- [](leaderboard.topic) to view a temporary leaderboard response.
+- [](send.topic) for other helper messages.
 - [](Carry-and-Score-System.md) and [](Crafts-Transfers-and-Reputation.md) for the systems behind the leaderboard types.
