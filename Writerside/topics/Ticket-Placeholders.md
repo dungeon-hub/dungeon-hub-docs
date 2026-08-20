@@ -29,8 +29,6 @@ Placeholders for the user who **created** the ticket.
 Welcome, {user.mention}! Your ticket ID is {ticket.id}.
 ```
 
----
-
 ## Minecraft & Game Placeholders
 
 Placeholders for the ticket creator's linked Minecraft account and game statistics. These require the user to have a linked account via [](link.topic).

@@ -75,8 +75,6 @@ This page provides a comprehensive reference for all ticket panel configuration 
 }
 ```
 
----
-
 ## Channel Naming Templates
 
 All channel naming templates support placeholders. See [Ticket Placeholders](Ticket-Placeholders.md) for a complete list.
