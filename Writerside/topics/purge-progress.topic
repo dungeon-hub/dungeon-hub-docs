@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" title="/purge progress" id="purge-progress">
+    <tldr><p><format style="italic">Show the size and state of the current purge wave.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Shows the number of affected users and queued role-removal actions. The response indicates whether the wave is waiting to start or currently active. An error is returned when no purge is queued.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><p>This command takes no arguments.</p></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/purge progress</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="purge-start.topic"/></li><li><a href="purge-clear.topic"/></li></list></chapter>
+</topic>

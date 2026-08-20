@@ -9,9 +9,10 @@ The bot can display rich player profiles based on Hypixel data using the [dungeo
 
 ## Safety checks
 
-Use [](lookup.topic) to check whether a player (IGN) or Discord user is flagged across supported services. The profile and lookup complement each other: the profile shows in-game context, the lookup focuses on risk signals.
+Use [](lookup.topic) to check whether a player (IGN) or Discord user is flagged across supported services. The profile and lookup complement each other: the profile shows in-game context, while the lookup focuses on risk signals. See [](Player-Lookup-and-Safety.md) for the complete safety workflow and the limitations of lookup results.
 
 ## See also
 
 - [](lookup.topic)
+- [](Player-Lookup-and-Safety.md)
 - [](player.topic)

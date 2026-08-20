@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" title="/purge clear" id="purge-clear">
+    <tldr><p><format style="italic">Discard a queued purge wave before it starts.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Clears all queued purge data for the current server. It refuses to clear a purge that is already active.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><p>This command takes no arguments.</p></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/purge clear</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="purge-progress.topic"/></li></list></chapter>
+</topic>

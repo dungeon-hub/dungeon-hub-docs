@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/stats" id="stats">
+
+    <tldr>
+        <p>
+            <format style="italic">Show server statistics and bot uptime.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Displays the bot's uptime and statistics for the current server: member count, total and 30-day money
+            spent, and total and 30-day carry count. Values in parentheses are the totals from the last 30 days.
+        </p>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Show stats" id="ex-stats">
+            <code-block lang="bash">/stats</code-block>
+            <p>The response is titled with the server name and groups all statistics in a single embed.</p>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="leaderboard.topic"/>: ranking views of players.</li>
+            <li><a href="config.topic"/>: tune server settings that affect bot behavior.</li>
+        </list>
+    </chapter>
+
+</topic>

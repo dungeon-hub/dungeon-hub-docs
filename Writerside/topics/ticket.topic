@@ -2,7 +2,7 @@
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       id="ticket" title="/ticket ✏️">
+       id="ticket" title="/ticket">
 
     <tldr>
         <p>
@@ -37,9 +37,10 @@
         <list>
             <li><a href="ticket-close.topic">/ticket close</a>: Close the current ticket channel (if the panel isn't <code>closeable</code>, the ticket will be deleted instead).</li>
             <li><a href="ticket-add.topic">/ticket add</a>: Add a user to the current ticket channel (support staff only).</li>
+            <li><a href="ticket-claim.topic">/ticket claim</a>: Claim an open ticket, or unclaim the ticket you currently own.</li>
         </list>
         <p>
-            Additional ticket actions (claim, unclaim, delete, reopen, transcript) are available via button interactions within ticket channels, but might be added as sub-commands at a later date.
+            Delete, reopen, and transcript actions are available through button interactions within ticket channels.
         </p>
     </chapter>
 

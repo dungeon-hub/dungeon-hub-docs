@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" id="role-requirements-edit" title="/role requirements edit">
+    <tldr><p><format style="italic">Edit an existing role requirement.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Updates the comparison, count, or extra data of a requirement selected by ID. The assigned role and requirement type cannot be changed; delete and recreate the requirement to replace either of them. If <code>reset-extra-data</code> is <code>true</code>, it takes precedence over <code>extra-data</code>.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><table style="header-row"><tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td></tr><tr><td><code>role-requirement</code></td><td>Integer</td><td>ID of the requirement to edit.</td><td>:x: No</td></tr><tr><td><code>comparison</code></td><td>Enumeration</td><td>Replacement comparison.</td><td>:white_check_mark: Yes</td></tr><tr><td><code>count</code></td><td>Integer</td><td>Replacement count.</td><td>:white_check_mark: Yes</td></tr><tr><td><code>extra-data</code></td><td>String</td><td>Replacement extra data.</td><td>:white_check_mark: Yes</td></tr><tr><td><code>reset-extra-data</code></td><td>Boolean</td><td>Whether to clear existing extra data.</td><td>:white_check_mark: Yes</td></tr></table></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/role requirements edit role-requirement: 42 count: 250</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="role-requirements-list.topic"/></li><li><a href="role-requirements-delete.topic"/></li></list></chapter>
+</topic>

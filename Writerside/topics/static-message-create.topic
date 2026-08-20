@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/static-message create" id="static-message-create">
+
+    <tldr>
+        <p>
+            <format style="italic">Create and register a bot-managed message in a text channel.</format>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Creates a static-message record, posts its initial embed, and returns a link to the posted message. If no
+            channel is provided, the message is posted in the channel where the command was used. Some message types
+            need objects assigned with <code>/static-message assign-object</code> before they can display useful data.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>static-message-type</code></td>
+                <td>Enumeration</td>
+                <td>Content generated for the message.</td>
+                <td>:x: No</td>
+            </tr>
+            <tr>
+                <td><code>channel</code></td>
+                <td>Channel</td>
+                <td>Target text channel. Defaults to the current channel.</td>
+                <td>:white_check_mark: Yes</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/static-message create static-message-type: Reputation Leaderboard channel: #announcements</code-block>
+    </chapter>
+
+    <chapter title="Available Types" id="available-types">
+        <list>
+            <li><code>Score Leaderboard</code></li>
+            <li><code>Total Leaderboard</code></li>
+            <li><code>Reputation Leaderboard</code></li>
+            <li><code>Ticket Panel</code></li>
+            <li><code>Price Message</code></li>
+        </list>
+    </chapter>
+
+</topic>

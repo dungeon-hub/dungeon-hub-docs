@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/role config set" id="role-config-set">
+
+    <tldr>
+        <p>
+            <format style="italic">Configure a role's nickname schema or automatic role action.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p><format style="bold">Default permission required:</format> <code>Manage Roles</code></p>
+        <p><format style="bold">Additional requirement:</format> <code>Administrator</code></p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Stores bot-specific settings for a Discord role. A name schema controls nicknames, while a
+            <a href="Role-Action.md">role action</a> controls how the role is applied or removed when users are
+            synchronized. If neither optional argument is supplied, the command displays the role's current
+            configuration instead of changing it.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>role</code></td>
+                <td>Role</td>
+                <td>Role to configure.</td>
+                <td>:x: No</td>
+            </tr>
+            <tr>
+                <td><code>name-schema</code></td>
+                <td>String</td>
+                <td>Nickname schema to use when this role determines a member's nickname.</td>
+                <td>:white_check_mark: Yes</td>
+            </tr>
+            <tr>
+                <td><code>role-action</code></td>
+                <td>Enumeration</td>
+                <td>When the bot should apply or remove the role based on whether a member is verified.</td>
+                <td>:white_check_mark: Yes</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="Set a role action" id="set-role-action">
+            <code-block lang="bash">/role config set role: @Verified role-action: Apply And Remove When Verified</code-block>
+        </chapter>
+        <chapter title="View the current configuration" id="view-role-config">
+            <code-block lang="bash">/role config set role: @Verified</code-block>
+        </chapter>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="role-config-reset.topic"/>: clear a role's name schema.</li>
+            <li><a href="Role-Management.md"/>: understand when role configuration is evaluated.</li>
+        </list>
+    </chapter>
+
+</topic>

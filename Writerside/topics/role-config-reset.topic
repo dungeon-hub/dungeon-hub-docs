@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/role config reset" id="role-config-reset">
+
+    <tldr>
+        <p>
+            <format style="italic">Clear the nickname schema configured for a role.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p><format style="bold">Default permission required:</format> <code>Manage Roles</code></p>
+        <p><format style="bold">Additional requirement:</format> <code>Administrator</code></p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Resets selected bot-specific settings for a Discord role. Currently, only the name schema can be reset.
+            Set <code>name-schema</code> to <code>false</code> to view the current configuration without changing it.
+            Resetting the name schema does not change the role action.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>role</code></td>
+                <td>Role</td>
+                <td>Role to reset.</td>
+                <td>:x: No</td>
+            </tr>
+            <tr>
+                <td><code>name-schema</code></td>
+                <td>Boolean</td>
+                <td>Whether to clear the role's configured nickname schema.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/role config reset role: @Verified name-schema: true</code-block>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="role-config-set.topic"/>: set or inspect role configuration.</li>
+        </list>
+    </chapter>
+
+</topic>
