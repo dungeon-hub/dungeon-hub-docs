@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td><code>static-message-type</code></td>
-                <td>Enumeration</td>
+                <td>String</td>
                 <td>Content generated for the message.</td>
                 <td>:x: No</td>
             </tr>

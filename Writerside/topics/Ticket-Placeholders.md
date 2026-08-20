@@ -9,8 +9,6 @@ Placeholders can be used in:
 - **Ticket welcome messages**: `ticketMessage` content and embeds
 - **Transcript DM messages**: `userTranscriptDm`
 
----
-
 ## User Placeholders
 
 Placeholders for the user who **created** the ticket.
@@ -25,7 +23,7 @@ Placeholders for the user who **created** the ticket.
 
 **Example usage:**
 
-```
+```text
 Welcome, {user.mention}! Your ticket ID is {ticket.id}.
 ```
 
@@ -44,11 +42,9 @@ Placeholders for the ticket creator's linked Minecraft account and game statisti
 
 **Example usage:**
 
-```
+```text
 Player: {user.minecraft.name} (Catacombs {user.catacombs.level})
 ```
-
----
 
 ## Ticket Placeholders
 
@@ -62,11 +58,10 @@ Placeholders for ticket-specific information.
 | `{panel.name}`   | Ticket panel name                                                 | `Support`            |
 
 **Example usage:**
-```
+
+```text
 ticket-{ticket.count}
 ```
-
----
 
 ## Form Response Placeholders
 
@@ -85,12 +80,10 @@ Placeholders for user responses to form questions. The number corresponds to the
 
 **Example usage:**
 
-```
+```text
 carry-{ticket.form.2}-runs
 ```
 If form question 2 asks "How many runs?" and the user responds "10", the channel name becomes `carry-10-runs`.
-
----
 
 ## Interaction User Placeholders
 
@@ -105,11 +98,9 @@ Placeholders for the user who **performed an action** on the ticket (e.g., close
 
 **Example usage:**
 
-```
+```text
 Ticket closed by {interactionUser.mention}
 ```
-
----
 
 ## Claimer Placeholders
 
@@ -124,11 +115,9 @@ Placeholders for the support staff member who claimed the ticket. These are only
 
 **Example usage:**
 
-```
+```text
 {panel.name}-{ticket.count}-{claimer.mention}
 ```
-
----
 
 ## Carry System Placeholders
 
@@ -144,12 +133,11 @@ Placeholders for carry tier and difficulty information. These require the ticket
 
 **Example usage:**
 
-```
+```text
 {carry-tier.name}-{carry-difficulty.name}-{ticket.count}
 ```
-Output: `floor-7-completion-42`
 
----
+Output: `floor-7-completion-42`
 
 ## Transcript Placeholders
 
@@ -165,8 +153,6 @@ Placeholders for transcript information. These are primarily used in `userTransc
 ["Your ticket has been closed. View the transcript: {transcript.url}"]
 ```
 
----
-
 ## Special Considerations
 
 ### Empty or Missing Values
@@ -181,7 +167,7 @@ Placeholders are **case-sensitive**. Use the exact casing shown in this referenc
 
 You can combine multiple placeholders in a single template:
 
-```
+```text
 {user.minecraft.name}-{carry-tier.name}-ticket-{ticket.count}
 ```
 
@@ -194,20 +180,18 @@ The best way to test placeholder behavior is to:
 2. Create a test ticket
 3. Observe the channel name and welcome message
 
----
-
 ## Common Use Cases
 
 ### Example 1: Personalized Channel Name
 
-```
+```text
 {panel.name}-{user.minecraft.name}-{ticket.count}
 ```
 Output: `support-technoblade-42`
 
 ### Example 2: Carry Ticket with Difficulty
 
-```
+```text
 {carry-tier.name}-{carry-difficulty.name}-{ticket.form.1}runs
 ```
 If form question 1 asks "How many runs?" and the user answers "5":\
@@ -233,8 +217,6 @@ Output: `floor-7-completion-5runs`
   }
 }]
 ```
-
----
 
 ## See Also
 

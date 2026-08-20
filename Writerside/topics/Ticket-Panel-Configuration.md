@@ -28,8 +28,6 @@ This page provides a comprehensive reference for all ticket panel configuration 
 **Description:** When enabled, users must have a linked Minecraft account (via [](link.topic)) before they can create a ticket. Useful for carry service tickets where verification is required.\
 **Example:** `true` for carry tickets, `false` for general support
 
----
-
 ## Ticket Logic
 
 ### `closeable`
@@ -47,7 +45,7 @@ This page provides a comprehensive reference for all ticket panel configuration 
 ### `claimable`
 
 **Type:** Boolean (default: `false`)\
-**Description:** Enables the ticket claiming system. When `true`, support staff can click a "Claim" button to take ownership of a ticket, updating the channel name and permissions.\
+**Description:** Enables the ticket claiming system. When `true`, members with `supportRoles` or `additionalRoles`, members with **Manage Channels**, and administrators can claim a ticket, updating the channel name and permissions. Only the current claimer, a member with **Manage Channels**, or an administrator can unclaim it.\
 **Example:** `true` for busy support channels to assign responsibility
 
 ### `ticketMessage`
@@ -98,8 +96,6 @@ All channel naming templates support placeholders. See [Ticket Placeholders](Tic
 **Description:** Template for renaming the channel when a ticket is closed (state: `Closed`). If not set, the channel name remains unchanged when closed.\
 **Example:** `"closed-{panel.name}-{ticket.count}"`, `"archived-{ticket.count}"`
 
----
-
 ## Transcript Configuration
 
 Transcripts capture the complete message history of a ticket in HTML format and upload it to a CDN.
@@ -149,6 +145,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
    - `"transcript"` - Uses the built-in transcript embed with ticket information
    
 2. **Single embed object** (JSON object with Discord embed fields):
+
    ```json
    {
      "title": "Ticket Closed",
@@ -178,6 +175,7 @@ Transcripts capture the complete message history of a ticket in HTML format and 
 ```json
 ["transcript"]
 ```
+
 Default behavior - sends a built-in embed with ticket details and transcript link.
 
 ```json
@@ -190,6 +188,7 @@ Default behavior - sends a built-in embed with ticket details and transcript lin
   }
 }]
 ```
+
 Custom embed with placeholders.
 
 ```json
@@ -205,9 +204,8 @@ Custom embed with placeholders.
    }
 ]
 ```
-Sends the default transcript message, but attaches another custom embed asking the user to review the service.
 
----
+Sends the default transcript message, but attaches another custom embed asking the user to review the service.
 
 ## Access Control
 
@@ -241,13 +239,13 @@ Sends the default transcript message, but attaches another custom embed asking t
 
 Ticket channel permissions are controlled by five permission candidates:
 
-| Candidate | Description | Applied When |
-|-----------|-------------|--------------|
-| **SupportTeam** | Members with `supportRoles` | Always applied, except when ticket is claimed (then only TicketClaimer has support permissions) |
-| **AdditionalRoles** | Members with `additionalRoles` | Always applied |
-| **TicketCreator** | The user who created the ticket | Applied when ticket state is `Open`; removed when state is `Closed` |
-| **TicketClaimer** | The staff member who claimed the ticket | Applied when ticket is claimed; removed on unclaim |
-| **Everyone** | The `@everyone` role | Always applied (VIEW_CHANNEL denied by default) |
+| Candidate           | Description                             | Applied When                                                                                    |
+|---------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
+| **SupportTeam**     | Members with `supportRoles`             | Always applied, except when ticket is claimed (then only TicketClaimer has support permissions) |
+| **AdditionalRoles** | Members with `additionalRoles`          | Always applied                                                                                  |
+| **TicketCreator**   | The user who created the ticket         | Applied when ticket state is `Open`; removed when state is `Closed`                             |
+| **TicketClaimer**   | The staff member who claimed the ticket | Applied when ticket is claimed; removed on unclaim                                              |
+| **Everyone**        | The `@everyone` role                    | Always applied (VIEW_CHANNEL denied by default)                                                 |
 
 **Permission Flags** (currently hardcoded, not configurable via dashboard):
 - `@everyone` role: **Denied** VIEW_CHANNEL (flag `"1024"`)
@@ -261,8 +259,6 @@ Ticket channel permissions are controlled by five permission candidates:
 - **Open → Closed**: Creator **loses access**, support roles maintain access
 - **Closed → Open**: Creator regains access
 - **Any → Deleted**: Channel deleted (all permissions removed)
-
----
 
 ## Carry System Integration
 
@@ -293,8 +289,6 @@ Ticket channel permissions are controlled by five permission candidates:
 > **Carry Integration Summary:** Use `relatedCarryTier` alone if you want a general carry panel that enables logging. Use both `relatedCarryTier` and `relatedCarryDifficulty` together for specific carry service tickets that display pricing and collect difficulty-specific information.
 > {style="note"}
 
----
-
 ## Custom Forms
 
 Forms are displayed as Discord modals when users click the ticket creation button. Up to 5 form questions are supported per ticket panel.
@@ -316,6 +310,7 @@ Built-in form questions provided by the bot.
 - `carry-amount` - Text input for the number of carries requested
 
 **Example:**
+
 ```json
 {
   "type": "Predefined",
@@ -328,6 +323,7 @@ Built-in form questions provided by the bot.
 Custom text input fields (short text or paragraph).
 
 **Data structure:**
+
 ```json
 {
   "label": "Question text",
@@ -338,6 +334,7 @@ Custom text input fields (short text or paragraph).
 ```
 
 **Example:**
+
 ```json
 {
   "type": "TextInput",
@@ -350,6 +347,7 @@ Custom text input fields (short text or paragraph).
 Dropdown selection from predefined options.
 
 **Data structure:**
+
 ```json
 {
   "label": "Question text",
@@ -359,6 +357,7 @@ Dropdown selection from predefined options.
 ```
 
 **Example:**
+
 ```json
 {
   "type": "StringSelect",
@@ -371,6 +370,7 @@ Dropdown selection from predefined options.
 Information text displayed to the user (no input required).
 
 **Data structure:**
+
 ```json
 {
   "label": "Title",
@@ -379,6 +379,7 @@ Information text displayed to the user (no input required).
 ```
 
 **Example:**
+
 ```json
 {
   "type": "TextDisplay",
@@ -416,8 +417,6 @@ Form responses can be referenced in messages and channel names using placeholder
 - `{ticket.form.2}` - Response to the second form question
 - `{ticket.form.3}` through `{ticket.form.5}` - Responses to subsequent questions
 
----
-
 ## Default Configuration Values
 
 When creating a new ticket panel, the following defaults are applied:
@@ -443,16 +442,12 @@ When creating a new ticket panel, the following defaults are applied:
 }
 ```
 
----
-
 ## Validation & Constraints
 
 - **JSON Fields**: `ticketMessage`, `userTranscriptDm`, and `formQuestions` must be valid JSON. The dashboard validates JSON syntax before saving.
 - **ID Fields**: Role IDs, category IDs, and channel IDs must be valid Discord snowflake IDs (64-bit integers).
 - **Form Limits**: Maximum 5 form questions per ticket panel.
 - **Enum Values**: `closeTranscriptTarget` and `deleteTranscriptTarget` must be one of: `None`, `User`, `TranscriptChannel`, `Both`.
-
----
 
 ## See Also
 
