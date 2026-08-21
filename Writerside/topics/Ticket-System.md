@@ -47,18 +47,24 @@ For detailed configuration options, see [](Ticket-Panel-Configuration.md).
 
 Who can see and access a ticket depends on its current state:
 
-**Open Tickets:**
+**Open, Unclaimed Tickets:**
 - ✓ Ticket creator (the user who opened it)
 - ✓ Support roles (configured in `supportRoles`)
 - ✓ Additional roles (configured in `additionalRoles`)
-- ✓ Ticket claimer (if the ticket has been claimed)
+- ✗ Everyone else (the `@everyone` role has VIEW_CHANNEL denied)
+
+**Open, Claimed Tickets:**
+- ✓ Ticket creator (the user who opened it)
+- ✓ Ticket claimer
+- ✓ Additional roles (configured in `additionalRoles`)
+- ✗ Support roles (their permissions are omitted while the ticket is claimed)
 - ✗ Everyone else (the `@everyone` role has VIEW_CHANNEL denied)
 
 **Closed Tickets:**
 - ✗ Ticket creator (loses access when the ticket is closed)
-- ✓ Support roles (maintain access)
 - ✓ Additional roles (maintain access)
-- ✓ Original claimer (if applicable)
+- ✓ Support roles when the ticket is unclaimed
+- ✓ Ticket claimer (if applicable); support-role permissions are omitted
 - ✗ Everyone else
 
 **Deleted Tickets:**
@@ -70,14 +76,14 @@ Who can see and access a ticket depends on its current state:
 - **Closed → Open** - Staff reopens the ticket using the "Open" button
 - **Closed → Deleted** - Staff deletes the closed ticket using the "Delete" button
 
-> Permission changes happen automatically when tickets transition between states. The ticket creator loses access when a ticket is closed, but support staff always maintain access to closed tickets.
+> Permission changes happen automatically when tickets transition between states. The ticket creator loses access when a ticket is closed. When the ticket is claimed, SupportTeam permissions from `supportRoles` are omitted and the claimer receives support access instead; permissions from `additionalRoles` continue to apply.
 > {style="note"}
 
 ### Claiming Effects
 
 When a support staff member claims a ticket:
 - The channel name updates to use the `claimedChannelName` template (if configured)
-- Channel permissions are updated to include the claimer
+- Channel permissions are updated to include the claimer and omit SupportTeam permissions from `supportRoles`; permissions from `additionalRoles` continue to apply
 - The claimer is tracked and can be referenced in messages via `{claimer.mention}`
 
 ## Transcripts

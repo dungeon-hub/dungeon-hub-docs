@@ -45,7 +45,7 @@ This page provides a comprehensive reference for all ticket panel configuration 
 ### `claimable`
 
 **Type:** Boolean (default: `false`)\
-**Description:** Enables the ticket claiming system. When `true`, members with `supportRoles` or `additionalRoles`, members with **Manage Channels**, and administrators can claim a ticket, updating the channel name and permissions. Only the current claimer, a member with **Manage Channels**, or an administrator can unclaim it.\
+**Description:** Enables the ticket-claiming system. When `true`, members with `supportRoles` or `additionalRoles`, members with **Manage Channels**, and administrators can claim a ticket, updating the channel name and permissions. Only the current claimer, a member with **Manage Channels**, or an administrator can unclaim it.\
 **Example:** `true` for busy support channels to assign responsibility
 
 ### `ticketMessage`
@@ -212,7 +212,7 @@ Sends the default transcript message, but attaches another custom embed asking t
 ### `supportRoles`
 
 **Type:** Comma-separated Role IDs (optional)\
-**Description:** Discord role IDs for support staff who can access all tickets. Members with these roles can view, respond to, claim, close, and delete tickets. Each ID is a Discord snowflake (64-bit integer).\
+**Description:** Discord role IDs for support staff who can access unclaimed tickets. Members with these roles can view, respond to, claim, close, and delete tickets. When `ticket.claimer` is set, permissions for these roles are omitted and the claimer receives the support permissions instead; permissions for `additionalRoles` continue to apply. Each ID is a Discord snowflake (64-bit integer).\
 **Format:** Comma-separated list\
 **Example:** `1234567890123456789` (single role), `111111111,222222222` (multiple roles)
 
@@ -242,7 +242,7 @@ Ticket channel permissions are controlled by five permission candidates:
 | Candidate           | Description                             | Applied When                                                                                    |
 |---------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
 | **SupportTeam**     | Members with `supportRoles`             | Always applied, except when ticket is claimed (then only TicketClaimer has support permissions) |
-| **AdditionalRoles** | Members with `additionalRoles`          | Always applied                                                                                  |
+| **AdditionalRoles** | Members with `additionalRoles`          | Always applied, including when the ticket is claimed                                            |
 | **TicketCreator**   | The user who created the ticket         | Applied when ticket state is `Open`; removed when state is `Closed`                             |
 | **TicketClaimer**   | The staff member who claimed the ticket | Applied when ticket is claimed; removed on unclaim                                              |
 | **Everyone**        | The `@everyone` role                    | Always applied (VIEW_CHANNEL denied by default)                                                 |
@@ -329,7 +329,7 @@ Custom text input fields (short text or paragraph).
   "label": "Question text",
   "placeholder": "Placeholder text...",
   "required": true,
-  "style": "SHORT" | "PARAGRAPH"
+  "style": "<SHORT|PARAGRAPH>"
 }
 ```
 
