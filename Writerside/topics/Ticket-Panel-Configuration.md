@@ -45,7 +45,7 @@ This page provides a comprehensive reference for all ticket panel configuration 
 ### `claimable`
 
 **Type:** Boolean (default: `false`)\
-**Description:** Enables the ticket-claiming system. When `true`, members with `supportRoles` or `additionalRoles`, members with **Manage Channels**, and administrators can claim a ticket, updating the channel name and permissions. Only the current claimer, a member with **Manage Channels**, or an administrator can unclaim it.\
+**Description:** Enables the ticket-claiming system. Members with `supportRoles` may claim tickets only when `claimable` is `true` and may close tickets only when `closeable` is `true`. Members with `additionalRoles` may also claim tickets when `claimable` is `true`. Members with **Manage Channels** and administrators retain permission to claim and close tickets regardless of these settings. Claiming updates the channel name and permissions. Only the current claimer, a member with **Manage Channels**, or an administrator can unclaim a ticket.\
 **Example:** `true` for busy support channels to assign responsibility
 
 ### `ticketMessage`
