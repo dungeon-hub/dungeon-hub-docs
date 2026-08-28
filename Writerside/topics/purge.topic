@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/purge" id="purge">
+    <tldr>
+        <p><format style="italic">Remove configured roles from inactive service team members.</format></p><p><br/></p>
+        <p><format style="bold">Allowed in DMs:</format> :x: No</p>
+        <p><format style="bold">Default permission required:</format> <code>Administrator</code></p>
+    </tldr>
+    <chapter title="Description" id="description">
+        <p>A purge removes the roles associated with a configured purge type from members whose default score for a carry type is below a selected threshold. Members with the <a href="config.topic">configured <code>PURGE_IMMUNITY_ROLE</code></a> are excluded.</p>
+        <warning><p>Review the candidates with <code>/purge show</code> before adding and starting a purge. Starting processes the queued role removals and cannot be stopped with <code>/purge clear</code>.</p></warning>
+    </chapter>
+    <chapter title="Workflow" id="workflow"><list><li><a href="purge-show.topic"/> previews affected members.</li><li><a href="purge-add.topic"/> adds their role removals to the current purge wave.</li><li><a href="purge-progress.topic"/> reviews the queued or active wave.</li><li><a href="purge-start.topic"/> starts processing it.</li><li><a href="purge-clear.topic"/> discards a wave that has not started.</li></list></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="Server-Property.md"/></li><li><a href="score.topic"/></li></list></chapter>
+</topic>

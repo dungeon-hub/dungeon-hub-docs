@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" title="/purge add" id="purge-add">
+    <tldr><p><format style="italic">Add role removals to the current purge wave.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Calculates the same candidate set as <a href="purge-show.topic"/> and queues the configured role removals. It refuses to add candidates while the selected carry type has logs awaiting approval. No roles are removed until <a href="purge-start.topic"/> is used.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><table style="header-row"><tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td><td>Additional</td></tr><tr><td><code>carry-type</code></td><td>String</td><td>Carry-type identifier.</td><td>:x: No</td><td>Max length: 30; autocomplete available.</td></tr><tr><td><code>purge-type</code></td><td>String</td><td>Purge-type identifier.</td><td>:x: No</td><td>Max length: 30; autocomplete available.</td></tr><tr><td><code>threshold</code></td><td>Integer</td><td>Members with less default score are queued.</td><td>:x: No</td><td>Min: 0; max: 100.</td></tr></table></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/purge add carry-type: dungeons purge-type: inactive threshold: 20</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="purge-progress.topic"/></li><li><a href="purge-start.topic"/></li><li><a href="purge-clear.topic"/></li></list></chapter>
+</topic>

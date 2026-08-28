@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" id="role-requirements-get" title="/role requirements get">
+    <tldr><p><format style="italic">Show all requirements assigned to one role.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Displays the selected role's requirements in a paginator. Each page includes the requirement ID needed by the edit and delete commands.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><table style="header-row"><tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td></tr><tr><td><code>role</code></td><td>Role</td><td>Role whose requirements should be displayed.</td><td>:x: No</td></tr></table></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/role requirements get role: @Experienced</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="role-requirements-list.topic"/></li><li><a href="role-requirements-edit.topic"/></li></list></chapter>
+</topic>

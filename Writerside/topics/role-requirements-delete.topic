@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" id="role-requirements-delete" title="/role requirements delete">
+    <tldr><p><format style="italic">Permanently delete a role requirement.</format></p></tldr>
+    <chapter title="Description" id="description"><p>Deletes the requirement selected by ID and returns the deleted record. Use the list or get command to find the ID first.</p></chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><table style="header-row"><tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td></tr><tr><td><code>id</code></td><td>Integer</td><td>ID of the requirement to delete.</td><td>:x: No</td></tr></table></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/role requirements delete id: 42</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="role-requirements-list.topic"/></li><li><a href="role-requirements-add.topic"/></li></list></chapter>
+</topic>

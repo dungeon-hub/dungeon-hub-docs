@@ -31,8 +31,8 @@
     <chapter title="Sub-Commands" id="sub-commands">
         <list>
             <li><a href="role-add.topic"/>, <a href="role-remove.topic"/>, <a href="role-remove-group.topic"/>: Give or remove roles from a user.</li>
-            <li><code>config set</code>, <code>config reset</code>: Set name schema or the <a href="Role-Action.md">role action</a> for a role.</li>
-            <li><code>requirements get</code>, <code>requirements list</code>, <code>requirements add</code>, <code>requirements edit</code>, <code>requirements delete</code>: Manage <a href="Role-Management.md"/> and <a href="Role-Requirement-Type.md"/>.</li>
+            <li><a href="role-config-set.topic">config set</a>, <a href="role-config-reset.topic">config reset</a>: Set or reset the name schema and <a href="Role-Action.md">role action</a> for a role.</li>
+            <li><a href="role-requirements.topic">requirements</a>: List, inspect, create, edit, or delete automatic role requirements.</li>
         </list>
     </chapter>
 

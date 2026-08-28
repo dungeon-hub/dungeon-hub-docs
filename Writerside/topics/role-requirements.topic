@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
-<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       id="role-requirements" title="/role requirements ✏️">
-    <p>Start typing here...</p>
-
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" id="role-requirements" title="/role requirements">
+    <tldr><p><format style="italic">Manage rules that automatically grant roles.</format></p><p><br/></p><p><format style="bold">Allowed in DMs:</format> :x: No</p><p><format style="bold">Default permission required:</format> <code>Manage Roles</code></p><p><format style="bold">Additional requirement:</format> <code>Administrator</code></p></tldr>
+    <chapter title="Description" id="description"><p>A role requirement compares a player or account value against a configured count. During synchronization, all requirements assigned to a role must pass for the member to keep or receive that role. See <a href="Role-Management.md"/> for processing order and <a href="Role-Requirement-Type.md"/> for supported values.</p></chapter>
+    <chapter title="Sub-Commands" id="sub-commands"><list><li><a href="role-requirements-get.topic"/>: list requirements for one role.</li><li><a href="role-requirements-list.topic"/>: list every requirement in the server.</li><li><a href="role-requirements-add.topic"/>: create a requirement.</li><li><a href="role-requirements-edit.topic"/>: change a requirement by ID.</li><li><a href="role-requirements-delete.topic"/>: delete a requirement by ID.</li></list></chapter>
 </topic>

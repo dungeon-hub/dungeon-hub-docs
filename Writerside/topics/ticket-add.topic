@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/ticket add ✏️" id="ticket-add">
+
+    <tldr>
+        <p>
+            <format style="italic">Add a user to the current ticket channel.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code> (support staff only)
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description" collapsible="true">
+        <p>
+            Adds a Discord user to the current ticket channel by granting them permission overwrites.
+            This allows the specified user to view and interact with the ticket, even if they are not the ticket creator
+            or a member of the support/additional roles.
+        </p>
+        <p>
+            Common use cases:
+        </p>
+        <list>
+            <li>Adding a supervisor or manager to observe a support interaction</li>
+            <li>Including a specialist (e.g., technical expert) to assist with a complex issue</li>
+            <li>Adding a friend or party member to a carry service ticket for coordination</li>
+        </list>
+        <p>
+            The added user receives the same ticket permissions as the ticket claimer.
+            The action is logged in the ticket channel.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+            </tr>
+            <tr>
+                <td><code>user</code></td>
+                <td>User</td>
+                <td>The Discord user to add to the ticket.</td>
+                <td>:x: No</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/ticket add user: magicclutch</code-block>
+        <p>Adds the user magicclutch to the current ticket channel.</p>
+    </chapter>
+
+    <chapter title="Notes" id="notes" collapsible="true">
+        <list>
+            <li>
+                This command can only be used by members with support roles or additional roles configured on the ticket panel.
+            </li>
+            <li>
+                The added user will have access to the entire message history of the ticket, not just messages sent after they were added.
+            </li>
+            <li>
+                If the ticket is later closed, the added user will lose access (just like the ticket creator), unless they are a member of support/additional roles.
+            </li>
+            <li>
+                There is no built-in <code>/ticket remove</code> command. To remove a user, use Discord's standard channel permission management.
+            </li>
+        </list>
+        <note>
+            Currently, the added user is not saved. They are overwritten once the ticket permissions are updated by the bot, and they also can't be removed again.
+            In a future update, this will change.
+        </note>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="Ticket-System.md">Ticket System Overview</a></li>
+            <li><a href="Ticket-Panel-Configuration.md"/></li>
+            <li><a href="ticket-close.topic">/ticket close</a> - Close a ticket</li>
+        </list>
+    </chapter>
+
+</topic>

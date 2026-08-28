@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       id="ticket" title="/ticket">
+
+    <tldr>
+        <p>
+            <format style="italic">Manage ticket channels and interactions.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code> (context-dependent)
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            The <code>/ticket</code> command provides subcommands for managing ticket channels.
+            These commands allow support staff and ticket creators to close tickets, add users, and perform other ticket-related actions.
+            All ticket commands must be used within a ticket channel and are subject to permission checks based on the ticket panel configuration.
+        </p>
+        <p>
+            For a complete overview of the ticket system, see <a href="Ticket-System.md">Ticket System</a>.
+        </p>
+    </chapter>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="ticket-close.topic">/ticket close</a>: Close the current ticket channel (if the panel isn't <code>closeable</code>, the ticket will be deleted instead).</li>
+            <li><a href="ticket-add.topic">/ticket add</a>: Add a user to the current ticket channel (support staff only).</li>
+            <li><a href="ticket-claim.topic">/ticket claim</a>: Claim an open ticket, or unclaim the ticket you currently own.</li>
+        </list>
+        <p>
+            Delete, reopen, and transcript actions are available through button interactions within ticket channels.
+        </p>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="Ticket-System.md">Ticket System Overview</a></li>
+            <li><a href="Ticket-Panel-Configuration.md"/></li>
+        </list>
+    </chapter>
+
+</topic>

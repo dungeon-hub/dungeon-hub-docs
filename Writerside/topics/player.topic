@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="/player ✏️" id="player">
+       title="/player" id="player">
 
     <tldr>
         <p>
@@ -45,6 +45,13 @@
                 <td>:x: No</td>
                 <td>Min length: 2</td>
             </tr>
+            <tr>
+                <td><code>profile</code></td>
+                <td>String</td>
+                <td>SkyBlock profile name or profile UUID to display.</td>
+                <td>:white_check_mark: Yes</td>
+                <td>Autocompleted from the player's profiles; otherwise uses their primary or selected profile.</td>
+            </tr>
         </table>
     </chapter>
 
@@ -53,12 +60,16 @@
             <code-block lang="bash">/player ign: Taubsie</code-block>
             <img alt="player.png" src="player.png" width="325" style="inline" border-effect="rounded"/>
         </chapter>
+        <chapter title="Choose a profile" id="ex-player-profile">
+            <code-block lang="bash">/player ign: Taubsie profile: Apple</code-block>
+        </chapter>
     </chapter>
 
     <chapter title="See Also" id="see-also">
         <list>
             <li><a href="lookup.topic"/>: check if a user/IGN is flagged.</li>
             <li><a href="Player-Profiles.md"/>: the feature is described here as well</li>
+            <li><a href="set-primary-profile.topic"/>: choose the default profile used by bot features.</li>
         </list>
     </chapter>
 

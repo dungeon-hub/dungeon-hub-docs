@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/static-message" id="static-message">
+
+    <tldr>
+        <p>
+            <format style="italic">Create, find, configure, and refresh bot-managed messages.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :x: No
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>Administrator</code>
+        </p>
+    </tldr>
+
+    <chapter title="Sub-Commands" id="sub-commands">
+        <list>
+            <li><a href="static-message-create.topic">create</a>: create and post a static message.</li>
+            <li><a href="static-message-find.topic">find</a>: list registered static messages, optionally filtered by channel.</li>
+            <li><code>assign-object</code>: add an object ID to a static message.</li>
+            <li><code>remove-object</code>: remove an object ID from a static message.</li>
+        </list>
+    </chapter>
+
+    <chapter title="Description" id="description">
+        <p>
+            Static messages are registered embeds whose content the bot can regenerate as underlying data changes.
+            Leaderboards, ticket panels, and price messages are supported. All slash subcommands require the
+            <code>Administrator</code> permission and can only be used in a server.
+        </p>
+    </chapter>
+
+    <chapter title="Assigning Objects" id="objects" collapsible="true">
+        <p>
+            Some types use object IDs to select what they display: score leaderboards use carry-type IDs, ticket
+            panels use ticket-panel IDs, and price messages use carry-tier IDs. Total and reputation leaderboards do
+            not require objects. Use <code>/static-message assign-object</code> or
+            <code>/static-message remove-object</code> with the following arguments:
+        </p>
+        <table style="header-row">
+            <tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td></tr>
+            <tr><td><code>id</code></td><td>Integer</td><td>ID of the static message to change.</td><td>:x: No</td></tr>
+            <tr><td><code>object</code></td><td>Integer</td><td>ID of the object to add or remove.</td><td>:x: No</td></tr>
+        </table>
+        <code-block lang="bash">/static-message assign-object id: 42 object: 7</code-block>
+    </chapter>
+
+    <chapter title="Refreshing a Message" id="refreshing">
+        <p>
+            Right-click a registered message and select <code>Apps | Static Message Info</code>. The bot responds
+            ephemerally with the message's record and an <code>Update Static Message</code> button. Select the button
+            to regenerate the original message in place.
+        </p>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <p>Open one of the linked subcommand pages for arguments and examples.</p>
+    </chapter>
+
+    <chapter title="See Also" id="see-also">
+        <list>
+            <li><a href="leaderboard.topic"/>: static leaderboard messages.</li>
+            <li><a href="send.topic"/>: post helper messages like CNT or link-message.</li>
+        </list>
+    </chapter>
+
+</topic>

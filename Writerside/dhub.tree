@@ -9,10 +9,18 @@
     <toc-element topic="Welcome.md"/>
     <toc-element topic="Dungeon-Hub-Bot.md">
         <toc-element topic="Features.md">
+            <toc-element topic="Carry-and-Score-System.md"/>
+            <toc-element topic="Crafts-Transfers-and-Reputation.md"/>
             <toc-element topic="Embed-Management.md"/>
             <toc-element topic="Player-Profiles.md"/>
+            <toc-element topic="Player-Lookup-and-Safety.md"/>
             <toc-element topic="Role-Management.md"/>
             <toc-element topic="Server-Property.md"/>
+            <toc-element topic="Static-Messages.md"/>
+            <toc-element topic="Ticket-System.md">
+                <toc-element topic="Ticket-Panel-Configuration.md"/>
+                <toc-element topic="Ticket-Placeholders.md"/>
+            </toc-element>
             <toc-element topic="Verification.md"/>
             <toc-element topic="Warnings.md"/>
         </toc-element>
@@ -30,6 +38,7 @@
             </toc-element>
             <toc-element topic="find-user.topic"/>
             <toc-element topic="force-sync.topic"/>
+            <toc-element topic="help.topic"/>
             <toc-element topic="ign.topic"/>
             <toc-element topic="leaderboard.topic">
                 <toc-element topic="leaderboard-reputation.topic"/>
@@ -54,9 +63,22 @@
                 <toc-element topic="mass-sync-role.topic"/>
             </toc-element>
             <toc-element topic="player.topic"/>
+            <toc-element topic="purge.topic">
+                <toc-element topic="purge-show.topic"/>
+                <toc-element topic="purge-add.topic"/>
+                <toc-element topic="purge-start.topic"/>
+                <toc-element topic="purge-progress.topic"/>
+                <toc-element topic="purge-clear.topic"/>
+            </toc-element>
             <toc-element topic="role.topic">
+                <toc-element topic="role-config-set.topic"/>
+                <toc-element topic="role-config-reset.topic"/>
                 <toc-element topic="role-requirements.topic">
+                    <toc-element topic="role-requirements-get.topic"/>
+                    <toc-element topic="role-requirements-list.topic"/>
                     <toc-element topic="role-requirements-add.topic"/>
+                    <toc-element topic="role-requirements-edit.topic"/>
+                    <toc-element topic="role-requirements-delete.topic"/>
                 </toc-element>
                 <toc-element topic="role-add.topic"/>
                 <toc-element topic="role-remove.topic"/>
@@ -67,7 +89,19 @@
                 <toc-element topic="send-link-message.topic"/>
                 <toc-element topic="send-cnt-message.topic"/>
             </toc-element>
+            <toc-element topic="set-primary-profile.topic"/>
+            <toc-element topic="static-message.topic">
+                <toc-element topic="static-message-create.topic"/>
+                <toc-element topic="static-message-find.topic"/>
+            </toc-element>
+            <toc-element topic="stats.topic"/>
+            <toc-element topic="status.topic"/>
             <toc-element topic="sync.topic"/>
+            <toc-element topic="ticket.topic">
+                <toc-element topic="ticket-add.topic"/>
+                <toc-element topic="ticket-claim.topic"/>
+                <toc-element topic="ticket-close.topic"/>
+            </toc-element>
             <toc-element topic="unlink.topic"/>
             <toc-element topic="warn.topic">
                 <toc-element topic="warn-add.topic"/>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/help" id="help">
+
+    <tldr>
+        <p>
+            <format style="italic">Show general help or a topic-specific guide.</format>
+        </p>
+
+        <p><br/></p>
+
+        <p>
+            <format style="bold">Allowed in DMs:</format>
+            :white_check_mark: Yes
+        </p>
+
+        <p>
+            <format style="bold">Default permission required:</format>
+            <code>None</code>
+        </p>
+    </tldr>
+
+    <chapter title="Description" id="description">
+        <p>
+            Without an argument, shows an overview of commonly used bot commands. Select a topic to display a
+            detailed guide instead. Some topic guides depend on server configuration and may only be available in a
+            server, even though the command itself can be used in DMs.
+        </p>
+    </chapter>
+
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Description</td>
+                <td>Optional?</td>
+                <td>Additional</td>
+            </tr>
+            <tr>
+                <td><code>topic</code></td>
+                <td>String</td>
+                <td>Select which help topic you want.</td>
+                <td>:white_check_mark: Yes</td>
+                <td><code>reputation</code>, <code>score</code>, or <code>verification</code>.</td>
+            </tr>
+        </table>
+    </chapter>
+
+    <chapter title="Examples" id="examples" collapsible="true">
+        <chapter title="General help" id="ex-help-general">
+            <code-block lang="bash">/help</code-block>
+            <p>Displays the bot-usage overview and examples of commonly used commands.</p>
+        </chapter>
+        <chapter title="Reputation help" id="ex-help-topic">
+            <code-block lang="bash">/help topic: reputation</code-block>
+            <p>Explains reputation points and, when run in a server, lists any roles awarded at reputation milestones.</p>
+        </chapter>
+    </chapter>
+
+</topic>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/ticket claim" id="ticket-claim">
+    <tldr>
+        <p><format style="italic">Claim or unclaim the current ticket.</format></p><p><br/></p>
+        <p><format style="bold">Allowed in DMs:</format> :x: No</p>
+        <p><format style="bold">Default permission required:</format> <code>None</code> (ticket permissions apply)</p>
+    </tldr>
+    <chapter title="Description" id="description">
+        <p>Claims an open, unclaimed ticket. If the ticket is already claimed, the same command unclaims it. Claiming updates the ticket's permissions and configured channel name and notifies the ticket creator.</p>
+        <p>The ticket panel must have claiming enabled. Support or additional roles, members with <code>Manage Channels</code>, and administrators can claim. Only the current claimer, a member with <code>Manage Channels</code>, or an administrator can unclaim.</p>
+    </chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true"><p>This command takes no arguments and must be used in an open ticket channel.</p></chapter>
+    <chapter title="Examples" id="examples" collapsible="true"><code-block lang="bash">/ticket claim</code-block></chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="ticket.topic"/></li><li><a href="Ticket-Panel-Configuration.md"/></li></list></chapter>
+</topic>

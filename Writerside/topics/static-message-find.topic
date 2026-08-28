@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="/static-message find" id="static-message-find">
+    <tldr><p><format style="italic">List registered static messages.</format></p></tldr>
+    <chapter title="Description" id="description">
+        <p>Displays static-message records in a paginator. Each record includes its ID, message link, type, assigned object IDs, and any embed override. Filter by a text channel or omit the argument to list messages from the entire server.</p>
+    </chapter>
+    <chapter title="Arguments" id="arguments" collapsible="true">
+        <table style="header-row">
+            <tr><td>Name</td><td>Type</td><td>Description</td><td>Optional?</td><td>Additional</td></tr>
+            <tr><td><code>channel</code></td><td>Channel</td><td>Only list messages registered in this channel.</td><td>:white_check_mark: Yes</td><td>Text channels only.</td></tr>
+        </table>
+    </chapter>
+    <chapter title="Examples" id="examples" collapsible="true">
+        <code-block lang="bash">/static-message find channel: #announcements</code-block>
+    </chapter>
+    <chapter title="See Also" id="see-also"><list><li><a href="static-message-create.topic"/></li></list></chapter>
+</topic>
